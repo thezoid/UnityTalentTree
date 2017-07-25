@@ -1,0 +1,1779 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1165209899506818}
+  m_IsPrefabParent: 1
+--- !u!1 &1031851026448118
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4959554980854072}
+  - component: {fileID: 114517859453663386}
+  m_Layer: 0
+  m_Name: Tact_EnergyRegen
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1032134678069518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4831767071282126}
+  - component: {fileID: 114417217463695858}
+  m_Layer: 0
+  m_Name: Intelligence_TimeControl
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1059712383158554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4307264212476870}
+  - component: {fileID: 114461301603804916}
+  m_Layer: 0
+  m_Name: Karma_Crit
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1062765789843510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4587496792724510}
+  - component: {fileID: 114555286663197756}
+  m_Layer: 0
+  m_Name: Toughness
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1073291152226082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4018574215602796}
+  - component: {fileID: 114032463107628558}
+  m_Layer: 0
+  m_Name: Toughness_DamageUp
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1088833314127208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4630800954053108}
+  - component: {fileID: 114042698775580946}
+  m_Layer: 0
+  m_Name: Endurance_HPRegen
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1099310685809404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4795557378005476}
+  - component: {fileID: 114046373376278510}
+  m_Layer: 0
+  m_Name: Karma
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1142651484606262
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4611210323679508}
+  - component: {fileID: 114331470492607568}
+  m_Layer: 0
+  m_Name: Endurance_DamageReduction
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1154839559554530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4787638486085310}
+  - component: {fileID: 114053891358808890}
+  m_Layer: 0
+  m_Name: Intelligence_ManageRegen
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1161635675826774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4530635313699556}
+  - component: {fileID: 114857085701640190}
+  m_Layer: 0
+  m_Name: Nimbleness
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1165209899506818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4639810392388944}
+  - component: {fileID: 114572200558394322}
+  m_Layer: 0
+  m_Name: TraitManager
+  m_TagString: traitManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1181953011170088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4626508076162524}
+  - component: {fileID: 114409861729828864}
+  m_Layer: 0
+  m_Name: Tact_Pounce
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1182008657830550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4354392045690688}
+  - component: {fileID: 114980547276152644}
+  m_Layer: 0
+  m_Name: Toughness_Enrage
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1230999960223184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4216099663589774}
+  - component: {fileID: 114527240116353020}
+  m_Layer: 0
+  m_Name: Karma_LeechMP
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1284613069038842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4778836513235296}
+  - component: {fileID: 114387957723454850}
+  m_Layer: 0
+  m_Name: Toughness_KnockBack
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1289448705653330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4453736566339006}
+  - component: {fileID: 114960054773716612}
+  m_Layer: 0
+  m_Name: Intelligence_ManaUp
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1370635992434046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4248576521634100}
+  - component: {fileID: 114408215914407316}
+  m_Layer: 0
+  m_Name: Nimbleness_MoveSpeed
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1395104807136580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4459532194595120}
+  - component: {fileID: 114136768796338490}
+  m_Layer: 0
+  m_Name: Endurance
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1430178349624810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4143726209676734}
+  - component: {fileID: 114853685877292956}
+  m_Layer: 0
+  m_Name: Intelligence_Shield
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1441340411088384
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4201854603845956}
+  - component: {fileID: 114514067716008512}
+  m_Layer: 0
+  m_Name: Endurance_Thorns
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1462128511930536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4638797972079056}
+  - component: {fileID: 114770248736122970}
+  m_Layer: 0
+  m_Name: Karma_CurrencyGain
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1490049784512812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4344090214392202}
+  - component: {fileID: 114757489379503486}
+  m_Layer: 0
+  m_Name: Endurance_HPUP
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1523256379824260
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4978197263847300}
+  - component: {fileID: 114805336507476650}
+  m_Layer: 0
+  m_Name: Tact
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1582209401498770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4952630027113842}
+  - component: {fileID: 114952835591235962}
+  m_Layer: 0
+  m_Name: Intelligence
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1602521699862092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4599872202300690}
+  - component: {fileID: 114168217280087768}
+  m_Layer: 0
+  m_Name: Karma_LeechHP
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1626106082137324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4583218724762570}
+  - component: {fileID: 114164983677097356}
+  m_Layer: 0
+  m_Name: Toughness_SwipeRange
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1629574662918950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4403746410284726}
+  - component: {fileID: 114951746419218560}
+  m_Layer: 0
+  m_Name: Intelligence_Fireball
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1821538525191512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4373505127089618}
+  - component: {fileID: 114083139736060072}
+  m_Layer: 0
+  m_Name: Nimbleness_AggroReduction
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1842129386490014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4109456719145900}
+  - component: {fileID: 114824317071432776}
+  m_Layer: 0
+  m_Name: Karma_CurrencyRetained
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1851606529042582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4908441490431356}
+  - component: {fileID: 114795548671391500}
+  m_Layer: 0
+  m_Name: Karma_LeechEnergy
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1881170138532730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4621776222940464}
+  - component: {fileID: 114632152724731734}
+  m_Layer: 0
+  m_Name: Nimbleness_AttackCD
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1989971341336430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4130047263565950}
+  - component: {fileID: 114252368330065750}
+  m_Layer: 0
+  m_Name: Nimbleness_Stealth
+  m_TagString: trait
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4018574215602796
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1073291152226082}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4109456719145900
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1842129386490014}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4130047263565950
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1989971341336430}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4143726209676734
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1430178349624810}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4201854603845956
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1441340411088384}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4216099663589774
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1230999960223184}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4248576521634100
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1370635992434046}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4307264212476870
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1059712383158554}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4344090214392202
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1490049784512812}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4354392045690688
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1182008657830550}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4373505127089618
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1821538525191512}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4403746410284726
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1629574662918950}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4453736566339006
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1289448705653330}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4459532194595120
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1395104807136580}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4530635313699556
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1161635675826774}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4583218724762570
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1626106082137324}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4587496792724510
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1062765789843510}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4599872202300690
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1602521699862092}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4611210323679508
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1142651484606262}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4621776222940464
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1881170138532730}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4626508076162524
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1181953011170088}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4630800954053108
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1088833314127208}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4638797972079056
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1462128511930536}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4639810392388944
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1165209899506818}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4459532194595120}
+  - {fileID: 4201854603845956}
+  - {fileID: 4611210323679508}
+  - {fileID: 4630800954053108}
+  - {fileID: 4344090214392202}
+  - {fileID: 4952630027113842}
+  - {fileID: 4403746410284726}
+  - {fileID: 4143726209676734}
+  - {fileID: 4831767071282126}
+  - {fileID: 4787638486085310}
+  - {fileID: 4453736566339006}
+  - {fileID: 4795557378005476}
+  - {fileID: 4307264212476870}
+  - {fileID: 4638797972079056}
+  - {fileID: 4109456719145900}
+  - {fileID: 4908441490431356}
+  - {fileID: 4599872202300690}
+  - {fileID: 4216099663589774}
+  - {fileID: 4530635313699556}
+  - {fileID: 4130047263565950}
+  - {fileID: 4373505127089618}
+  - {fileID: 4621776222940464}
+  - {fileID: 4248576521634100}
+  - {fileID: 4978197263847300}
+  - {fileID: 4626508076162524}
+  - {fileID: 4959554980854072}
+  - {fileID: 4587496792724510}
+  - {fileID: 4354392045690688}
+  - {fileID: 4018574215602796}
+  - {fileID: 4778836513235296}
+  - {fileID: 4583218724762570}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4778836513235296
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1284613069038842}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4787638486085310
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1154839559554530}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4795557378005476
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1099310685809404}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4831767071282126
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1032134678069518}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4908441490431356
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1851606529042582}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4952630027113842
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1582209401498770}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4959554980854072
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1031851026448118}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4978197263847300
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1523256379824260}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4639810392388944}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114032463107628558
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1073291152226082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910836357b45eb84bb8f75a943d6678e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Damage Increase
+  traitDescription: Increase the damage you deal
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+  DamageIncreaseMod: 0
+--- !u!114 &114042698775580946
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1088833314127208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0914d65f02e1dc43acfc88163890a19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Health Regeneration
+  traitDescription: Gain the ability to regenerate health
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+  healthRegen: 0
+--- !u!114 &114046373376278510
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1099310685809404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f39e69306413fa147b4cd386261e48be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 5
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Increase Karma
+  traitDescription: Increase your karma
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+--- !u!114 &114053891358808890
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1154839559554530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76e28fcd92320c84daa21a71ae4f4e8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Mana Regeneration
+  traitDescription: Gain mana regeneration
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+  manaRegenUp: 0.0025
+--- !u!114 &114083139736060072
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1821538525191512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23bf9fc9d2e155d4ba63a81b61641cb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Aggro Reduction
+  traitDescription: Reduce the range that enemies aggro
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+  AggroReducMod: 0
+--- !u!114 &114136768796338490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1395104807136580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 345a2f4a61d92d346825c72a8b1ea935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 5
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Endurance
+  traitDescription: 'Increase your endurance by:'
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+--- !u!114 &114164983677097356
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1626106082137324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8019ae258706d04b8882d224eeecb13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Swipe Range
+  traitDescription: Increase the range that your swipe hits
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+  swipeRangeMod: 0
+--- !u!114 &114168217280087768
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1602521699862092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ec6be18771b234ca8f9d356cb55107, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Leech Health
+  traitDescription: Gain health on basic attacks
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+  healthLeech: 0
+--- !u!114 &114252368330065750
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1989971341336430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b4e1f175486954287895f300748b58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Stealth
+  traitDescription: Gain the ability to stealth
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+--- !u!114 &114331470492607568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1142651484606262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce7b49a44703c394b87e629010628221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: DamageReduction
+  traitDescription: 'Reduce incoming damage by:'
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+  damageReducMod: 0.025
+--- !u!114 &114387957723454850
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1284613069038842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde83cc90a34e254badff59d77d4464a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Knockback
+  traitDescription: Knock back enemies from basic attacks
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+  KnockBackModifier: 0
+--- !u!114 &114408215914407316
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1370635992434046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8098786dbe2fb742aff4ae55f10eaf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Move Speed
+  traitDescription: Move faster
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+  MoveSpeedModifier: 0
+--- !u!114 &114409861729828864
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1181953011170088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fe9ee3b074e2cf48a83575abb14ab43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Pounce
+  traitDescription: Gain the ability to pounce
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+--- !u!114 &114417217463695858
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1032134678069518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4a8660d44e96f945a2b02be5dbb990a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Time Control
+  traitDescription: Fain the ability to control time
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+--- !u!114 &114461301603804916
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1059712383158554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baf8e98fc3b800a4686eb936e0823ea6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Critical Chance
+  traitDescription: Increase crit
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+  critMod: 0
+--- !u!114 &114514067716008512
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1441340411088384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd4a5ab5cfaf5a54cb9184d2597ce430, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Thorns
+  traitDescription: Gain the ability to reflect incoming damage.
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+--- !u!114 &114517859453663386
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1031851026448118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a4dbab0d782a994f9f87dd00d2e1d81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Energy Regen
+  traitDescription: Regenerate energy faster
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+  EnergyRegenMod: 0
+--- !u!114 &114527240116353020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1230999960223184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d468703a1fb5d994299794088673d1f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Leech Mana
+  traitDescription: Gain mana from casting spells or being hit by spells
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+  manaLeech: 0
+--- !u!114 &114555286663197756
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1062765789843510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33c8dd8312c4c26439508ae5d3db3532, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 5
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Toughness
+  traitDescription: Increase toughness
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+--- !u!114 &114572200558394322
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1165209899506818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b07274cdfd0e1544a7e7d61ba2bb478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traits: []
+  traitsGO: []
+  tokens: {fileID: 0}
+--- !u!114 &114632152724731734
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1881170138532730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 053a74d91a3f1094ba43c18fa2fbcbb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Attack Cooldown Reduction
+  traitDescription: Attack faster
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+  AttackCDMod: 0
+--- !u!114 &114757489379503486
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1490049784512812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef11644313fc5d468cd4d7683ba987e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Increase Health
+  traitDescription: Increase health
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+  hpup: 0
+--- !u!114 &114770248736122970
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1462128511930536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfc243e76ff640743badd709840fec45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Currency Gain
+  traitDescription: Increase how much currency you gain on death
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+  currencyGainRatio: 0
+--- !u!114 &114795548671391500
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1851606529042582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732f42696f7fe954d9d02c70b8ee29ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Energy Leech
+  traitDescription: Leach energy from basic attacks
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+  energyLeech: 0
+--- !u!114 &114805336507476650
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1523256379824260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7992497775fd3774290ba1fb1ae2446e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 5
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Increase Tact
+  traitDescription: Increase tact
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+--- !u!114 &114824317071432776
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1842129386490014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54ada3df2078e0b4b9701125758a2d60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Currency Retention
+  traitDescription: Increase how much currency you keep per death
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+  currencyRetainedRatio: 0
+--- !u!114 &114853685877292956
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1430178349624810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab5b2b0be451014cb1acbd0348e3c7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Shield
+  traitDescription: Gain the ability to create a shield around you
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+--- !u!114 &114857085701640190
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1161635675826774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5864d9e6bb6267149a94827ce965c5a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 5
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Nimbleness
+  traitDescription: Increase Nimbleness
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+--- !u!114 &114951746419218560
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1629574662918950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e4eef8d0beafa24592f59e50ebb94ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Fireball
+  traitDescription: Gain the ability to cast fireball
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+--- !u!114 &114952835591235962
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1582209401498770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fa3bf5ab1d81f246a07567c5210e2b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 5
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Intelligence
+  traitDescription: Increase your intelligence.
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+--- !u!114 &114960054773716612
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1289448705653330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a41314460c10b234dbe64055e16ff5f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Increase Mana
+  traitDescription: Increase your mana
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
+  manaUp: 50
+--- !u!114 &114980547276152644
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1182008657830550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d23dae64b93cc2f43bb703081a7c8ef2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karmaBonus: 0
+  intelligenceBonus: 0
+  toughnessBonus: 0
+  tactBonus: 0
+  enduranceBonus: 0
+  nimblenessBonus: 0
+  HealthBonus: 0
+  MPBonus: 0
+  traitName: Enrage
+  traitDescription: Gain the ability to enrage
+  activated: 0
+  rank: 0
+  maxRanks: 3
+  cost: 1
