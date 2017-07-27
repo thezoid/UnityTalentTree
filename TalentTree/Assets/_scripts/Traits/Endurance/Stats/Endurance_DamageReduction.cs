@@ -7,13 +7,18 @@ public class Endurance_DamageReduction : Trait
     public float damageReducMod;
     public override bool Activate()
     {
+        if (damageReducMod <= 0)
+        {
+            Debug.Log("damageReducMod is set to zero or lower");
+            return false;
+        }
         //do trait activation
         activated = true;
         //mod player damage reduc
         //this switch will be based off the current rank of the trait
         //it can easily be expanded by increasing the max rank of the trait
         //add another case per additional rank
-        //if it can't find the stat, it will default to 1
+        //damageReduceMod must be modified above or on the game object
         switch (rank)
         {
             case 1:

@@ -7,6 +7,11 @@ public class Toughness_DamageUp : Trait
     public float DamageIncreaseMod;
     public override bool Activate()
     {
+        if (DamageIncreaseMod<= 0)
+        {
+            Debug.Log("DamageIncreaseMod is set to zero or lower");
+            return false;
+        }
         //do trait activation
         activated = true;
         //increase damage modifier

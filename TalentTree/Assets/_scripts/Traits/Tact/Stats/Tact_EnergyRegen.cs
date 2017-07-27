@@ -7,6 +7,11 @@ public class Tact_EnergyRegen : Trait
     public float EnergyRegenMod;
     public override bool Activate()
     {
+        if (EnergyRegenMod<= 0)
+        {
+            Debug.Log("EnergyRegenMod is set to zero or lower");
+            return false;
+        }
         //do trait activation
         activated = true;
         //mod player energy regen

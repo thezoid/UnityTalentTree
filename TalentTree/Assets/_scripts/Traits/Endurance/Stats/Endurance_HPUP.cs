@@ -7,13 +7,18 @@ public class Endurance_HPUP : Trait
     public float hpup;
     public override bool Activate()
     {
+        if (hpup<= 0)
+        {
+            Debug.Log("hpup is set to zero or lower");
+            return false;
+        }
         //do trait activation
         activated = true;
         //increase players hp
         //this switch will be based off the current rank of the trait
         //it can easily be expanded by increasing the max rank of the trait
         //add another case per additional rank
-        //if it can't find the stat, it will default to 1
+        //hpup needs to be set to a value in the editor or above
         switch (rank)
         {
             case 1:
@@ -39,7 +44,6 @@ public class Endurance_HPUP : Trait
         //this switch will be based off the current rank of the trait
         //it can easily be expanded by increasing the max rank of the trait
         //add another case per additional rank
-        //if it can't find the stat, it will default to 1
         switch (rank)
         {
             case 1:

@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class Karma_LeechMP : Trait
 {
-    public float manaLeech;
+    public float manaLeech; //this needs to be set >0
     public override bool Activate()
     {
+        if(manaLeech <= 0)
+        {
+            Debug.Log("manaLeech is set to zero or lower");
+            return false;
+        }
         //do trait activation
         activated = true;
         //set mpleech
         //this switch will be based off the current rank of the trait
         //it can easily be expanded by increasing the max rank of the trait
         //add another case per additional rank
-        //if it can't find the stat, it will default to 1
+        
         switch (rank)
         {
             case 1:

@@ -7,6 +7,11 @@ public class Toughness_SwipeRange : Trait
     public float swipeRangeMod;
     public override bool Activate()
     {
+        if (swipeRangeMod<= 0)
+        {
+            Debug.Log("swipeRangeMod is set to zero or lower");
+            return false;
+        }
         //do trait activation
         activated = true;
         //mod player swipe range

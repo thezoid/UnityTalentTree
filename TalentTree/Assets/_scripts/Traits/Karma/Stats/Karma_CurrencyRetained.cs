@@ -7,6 +7,11 @@ public class Karma_CurrencyRetained : Trait
     public float currencyRetainedRatio;
     public override bool Activate()
     {
+        if (currencyRetainedRatio < 0)
+        {
+            Debug.Log("currencyRetaineRation is set to lower than zero");
+            return false;
+        }
         //do trait activation
         activated = true;
         //set currency retention ratio

@@ -7,6 +7,11 @@ public class Karma_LeechEnergy : Trait
     public float energyLeech;
     public override bool Activate()
     {
+        if (energyLeech <= 0)
+        {
+            Debug.Log("energyLeech is set to zero or lower");
+            return false;
+        }
         //do trait activation
         activated = true;
         //set leechenergy

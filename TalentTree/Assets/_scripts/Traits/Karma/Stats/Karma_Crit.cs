@@ -7,6 +7,11 @@ public class Karma_Crit : Trait
     public float critMod;
     public override bool Activate()
     {
+        if (critMod <= 0)
+        {
+            Debug.Log("critMod is set to zero or lower");
+            return false;
+        }
         //do trait activation
         activated = true;
         //increase player crit chance

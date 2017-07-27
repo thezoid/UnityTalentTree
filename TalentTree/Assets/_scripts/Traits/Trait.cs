@@ -32,6 +32,8 @@ public abstract class Trait : MonoBehaviour {
     public int maxRanks = 1;
     public int cost = 0;
 
+    //[Header("Other")]
+
     private void Awake()
     {
         load(); //load the trait when the scene starts

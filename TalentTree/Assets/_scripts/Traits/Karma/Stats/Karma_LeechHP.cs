@@ -7,6 +7,11 @@ public class Karma_LeechHP : Trait
     public float healthLeech;
     public override bool Activate()
     {
+        if (healthLeech <= 0)
+        {
+            Debug.Log("healthLeech is set to zero or lower");
+            return false;
+        }
         //do trait activation
         activated = true;
         //set leechhp

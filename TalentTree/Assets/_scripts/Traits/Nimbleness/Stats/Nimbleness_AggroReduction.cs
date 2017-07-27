@@ -7,6 +7,11 @@ public class Nimbleness_AggroReduction : Trait
     public float AggroReducMod;
     public override bool Activate()
     {
+        if (AggroReducMod<= 0)
+        {
+            Debug.Log("AggroReducMod is set to zero or lower");
+            return false;
+        }
         //do trait activation
         activated = true;
         //modify enemy aggro range

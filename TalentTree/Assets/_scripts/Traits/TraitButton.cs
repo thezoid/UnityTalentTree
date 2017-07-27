@@ -11,7 +11,7 @@ public class TraitButton : MonoBehaviour {
     public string tooltipName; //the name of the trait to be displayed on the
     public string tooltipDesc; //the description of the trait to be displayed
     public string tooltipCost; //the cost of the trait to be displayed
-    private Texture tooltipBackground; //the texture of the background of the tooltip
+    public Texture tooltipBackground; //the texture of the background of the tooltip
     public GUISkin tooltipSkin; //the guiskin to determine the display of the tooltip
     bool reported = false; //a boolean used for debugging
     public Tokens tokens; //a reference to the object managing the tokens
@@ -23,23 +23,39 @@ public class TraitButton : MonoBehaviour {
         GUI.skin = tooltipSkin;
         if (tooltipShow)
         {
-
+            //if the trait is at max ranks, then we just need to draw the background, name, and description
+            //if you want to show the cost, reference the second label of the else case (for example, it will show something like "Cost: 3/3")
             if (trait.rank == trait.maxRanks)
             {
-                GUI.Box(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, 175, 200),tooltipBackground);
+                //tooltip background
+                GUI.Box(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, 175, Mathf.Max((float)Screen.height * 0.20f, ((float)tooltipDesc.Length) + 75f, 125f)),tooltipBackground);
+                //tooltip name
                 GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, Mathf.Clamp(tooltipName.Length * 10,75,175), 40), tooltipName);
-                GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y + 40, 170, 240), tooltipDesc);
-            } else if (!this.button.interactable)
-            {
-                GUI.Box(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, 175, 200), tooltipBackground);
-                GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, Mathf.Clamp(tooltipName.Length * 10, 75, 175), 40), tooltipName);
+                //tooltip cost
                 GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y + 40, 170, 240), tooltipDesc);
             }
+            //if the button isnt interactable but it isnt at max ranks, then it must be a disabled trait,
+            //therefore we only need the background, name, and description drawn
+            else if (!this.button.interactable)
+            {
+                //tooltip background
+                GUI.Box(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, 175, Mathf.Max((float)Screen.height * 0.20f, ((float)tooltipDesc.Length) + 75f, 125f)), tooltipBackground);
+                //tooltip name
+                GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, Mathf.Clamp(tooltipName.Length * 10, 75, 175), 40), tooltipName);
+                //tooltiip description
+                GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y + 40, 170, 240), tooltipDesc);
+            }
+            //the trait is a standard trait that can rank up, 
+            //therefore it needs the background, name, cost, and description drawn
             else
             {
-                GUI.Box(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, 175, 200), tooltipBackground);
+                //tooltip description
+                GUI.Box(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, 175, Mathf.Max((float)Screen.height * 0.20f,((float)tooltipDesc.Length) + 75f, 125f)), tooltipBackground);
+                //tooltip name
                 GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, Mathf.Clamp(tooltipName.Length * 10, 75, 175), 40), tooltipName);
+                //tooltip cost
                 GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y + 40, 170, 20), tooltipCost);
+                //tooltip description
                 GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y + 60, 170, 240), tooltipDesc);
             }
         }

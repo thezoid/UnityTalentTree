@@ -13,7 +13,12 @@ public class Endurance_Thorns : Trait
         //this switch will be based off the current rank of the trait
         //it can easily be expanded by increasing the max rank of the trait
         //add another case per additional rank
-        //if it can't find the stat, it will default to 1
+        //since this is an ability, this has a bit more to do per rank
+        //each ability has a few things:
+        //  the unlock flag
+        //  the resource cost
+        //  the effect duration
+        //  the damage it does
         switch (rank)
         {
             case 1:
@@ -50,6 +55,7 @@ public class Endurance_Thorns : Trait
         activated = false;
 
         //disable thorns ability flag
+        //this will be disabled regardless of its rank
         PlayerPrefs.SetInt("thornsUnlocked", 0);
         //this switch will be based off the current rank of the trait
         //it can easily be expanded by increasing the max rank of the trait

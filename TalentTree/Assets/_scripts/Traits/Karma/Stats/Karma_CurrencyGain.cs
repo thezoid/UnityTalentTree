@@ -7,6 +7,11 @@ public class Karma_CurrencyGain : Trait
     public float currencyGainRatio;
     public override bool Activate()
     {
+        if (currencyGainRatio<= 0)
+        {
+            Debug.Log("currencyGainRatio is set to zero or lower");
+            return false;
+        }
         //do trait activation
         activated = true;
         //increase player currency gain

@@ -237,7 +237,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &39844596
@@ -427,7 +428,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &46813024
@@ -846,7 +848,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &124025587
@@ -1048,7 +1051,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &233008006
@@ -1381,7 +1385,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &256822391
@@ -1577,7 +1582,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &325849165
@@ -1841,7 +1847,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &443887126
@@ -2292,7 +2299,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &582033899
@@ -2625,7 +2633,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &679820517
@@ -2902,7 +2911,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &723071684
@@ -3092,7 +3102,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &760466203
@@ -3368,7 +3379,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &833182607
@@ -3564,7 +3576,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &841709002
@@ -3902,7 +3915,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &878939324
@@ -4092,7 +4106,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &942806533
@@ -4282,7 +4297,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &948895631
@@ -4626,7 +4642,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &997489082
@@ -4816,7 +4833,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1024088089
@@ -5080,7 +5098,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1078375239
@@ -5344,7 +5363,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1104242193
@@ -5546,7 +5566,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1160267045
@@ -5742,7 +5763,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1181165962
@@ -6087,7 +6109,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1300224499
@@ -6277,7 +6300,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1301365393
@@ -6621,7 +6645,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1374012953
@@ -7073,7 +7098,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1553154208
@@ -7269,7 +7295,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1626829495
@@ -7471,7 +7498,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1688087613
@@ -7673,7 +7701,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1782484118
@@ -8060,7 +8089,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1835731137
@@ -8330,7 +8360,8 @@ MonoBehaviour:
   tooltipName: 
   tooltipDesc: 
   tooltipCost: 
-  tooltipSkin: {fileID: 0}
+  tooltipBackground: {fileID: 0}
+  tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
   tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1946127400

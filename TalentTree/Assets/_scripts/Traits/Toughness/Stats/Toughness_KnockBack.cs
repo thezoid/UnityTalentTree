@@ -7,6 +7,11 @@ public class Toughness_KnockBack : Trait
     public int KnockBackModifier;
     public override bool Activate()
     {
+        if (KnockBackModifier<= 0)
+        {
+            Debug.Log("KnockBackModifier is set to zero or lower");
+            return false;
+        }
         //do trait activation
         activated = true;
         //mod player knock back

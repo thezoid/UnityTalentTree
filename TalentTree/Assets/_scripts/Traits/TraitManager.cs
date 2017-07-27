@@ -11,7 +11,7 @@ public class TraitManager : MonoBehaviour
     void Awake()
     {
         traitsGO = GameObject.FindGameObjectsWithTag("trait"); //find all the trait game objects
-        traits = new Trait[traitsGO.Length];
+        traits = new Trait[traitsGO.Length]; //assign traits to be the size of how many trait objects are found
         for (int i = 0; i < traitsGO.Length; i++) //use this loop to populate our array with the traits
         {
             traits[i] = traitsGO[i].GetComponent<Trait>();
@@ -32,6 +32,7 @@ public class TraitManager : MonoBehaviour
                 t.save();
             }
         }
+        //if we fall through to the else case, then we dont have any traits in our array and an error occured finding the traits
         else
         {
             Debug.Log("No traits to save - check traits array");
@@ -49,6 +50,7 @@ public class TraitManager : MonoBehaviour
                 t.load();
             }
         }
+        //if we fall through to the else case, then we dont have any traits in our array and an error occured finding the traits
         else
         {
             Debug.Log("No traits to load - check traits array");
@@ -67,6 +69,7 @@ public class TraitManager : MonoBehaviour
                     //uncomment the line below to get more details on what traits are activating; WARNING: this will spam the console
                     //Debug.Log(t.name + " activated successfully!");
                 }
+                //if we fall through to the else case, then our trait has failed activating and we need to report it to the console
                 else
                 {
                     Debug.Log(t.name + " failed activating!");
@@ -91,12 +94,14 @@ public class TraitManager : MonoBehaviour
                     //uncomment the line below to get more details on what traits are deactivating; WARNING: this will spam the console
                     //Debug.Log(t.name + " deactivated successfully!");
                 }
+                //if we fall through to the else case, then our trait failed deactivating and we need to report it failing
                 else
                 {
                     Debug.Log(t.name + " failed deactivating!");
                 }
             }
         }
+        //if we fall through to this else case, then the array contained no traits to deactivate
         else
         {
             Debug.Log("No traits to deactivate - check traits array");
@@ -124,12 +129,14 @@ public class TraitManager : MonoBehaviour
                     //uncomment the line below to get more details on what traits are deactivating; WARNING: this will spam the console
                     // Debug.Log(t.name + " deactivated successfully!");
                 }
+                //if we fall through to the else, then our trait failed to deactivate, so we need to report it to the console
                 else
                 {
                     Debug.Log(t.name + " failed deactivating!");
                 }
             }
         }
+        //if we fall through to this else case, then the array contained no traits to deactivate
         else
         {
             Debug.Log("No traits to deactivate - check traits array");

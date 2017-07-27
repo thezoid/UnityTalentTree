@@ -6,6 +6,11 @@ public class Toughness : Trait {
 
     public override bool Activate()
     {
+        if (toughnessBonus<= 0)
+        {
+            Debug.Log("toughnessBonus is set to zero or lower");
+            return false;
+        }
         //do trait activation
         activated = true;
         //this switch will be based off the current rank of the trait

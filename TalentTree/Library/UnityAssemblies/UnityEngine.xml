@@ -571,7 +571,7 @@
     </member>
     <member name="P:UnityEngine.AI.NavMeshObstacle.shape">
       <summary>
-        <para>Shape of the obstacle.</para>
+        <para>The shape of the obstacle.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.AI.NavMeshObstacle.size">
@@ -4562,7 +4562,7 @@ Default is false.</para>
     </member>
     <member name="M:UnityEngine.Application.ExternalEval(System.String)">
       <summary>
-        <para>Evaluates script function in the containing web page.</para>
+        <para>Execution of a script function in the contained web page.</para>
       </summary>
       <param name="script">The Javascript function to call.</param>
     </member>
@@ -7278,7 +7278,7 @@ See Also: WWW.assetBundle, WWW.LoadFromCacheOrDownload.</param>
     </member>
     <member name="T:UnityEngine.BillboardRenderer">
       <summary>
-        <para>Renders a billboard.</para>
+        <para>Renders a billboard from a BillboardAsset.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.BillboardRenderer.billboard">
@@ -11654,22 +11654,22 @@ Sometimes it is not possible to project (for example when the joints form a cycl
     </member>
     <member name="T:UnityEngine.Cursor">
       <summary>
-        <para>Cursor API for setting the cursor that is used for rendering.</para>
+        <para>Cursor API for setting the cursor (mouse pointer).</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Cursor.lockState">
       <summary>
-        <para>How should the cursor be handled?</para>
+        <para>Determines whether the hardware pointer is locked to the center of the view, constrained to the window, or not constrained at all.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Cursor.visible">
       <summary>
-        <para>Should the cursor be visible?</para>
+        <para>Determines whether the hardware pointer is visible or not.</para>
       </summary>
     </member>
     <member name="M:UnityEngine.Cursor.SetCursor">
       <summary>
-        <para>Change the mouse cursor to the set texture OnMouseEnter.</para>
+        <para>Sets the mouse cursor to the given texture.</para>
       </summary>
     </member>
     <member name="M:UnityEngine.Cursor.SetCursor(UnityEngine.Texture2D,UnityEngine.Vector2,UnityEngine.CursorMode)">
@@ -11702,7 +11702,7 @@ Sometimes it is not possible to project (for example when the joints form a cycl
     </member>
     <member name="T:UnityEngine.CursorMode">
       <summary>
-        <para>How should the custom cursor be rendered.</para>
+        <para>Determines whether the mouse cursor is rendered using software rendering or, on supported platforms, hardware rendering.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.CursorMode.Auto">
@@ -13100,7 +13100,7 @@ You can specify either the absolute path or the relative path. When the path you
     </member>
     <member name="P:UnityEngine.Experimental.Director.AnimationClipPlayable.outputCount">
       <summary>
-        <para>The count of ouputs on the Playable.  Currently only 1 output is supported.</para>
+        <para>The count of outputs on the Playable.  Currently only 1 output is supported.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Experimental.Director.AnimationClipPlayable.speed">
@@ -13168,7 +13168,7 @@ You can specify either the absolute path or the relative path. When the path you
     </member>
     <member name="P:UnityEngine.Experimental.Director.AnimationMixerPlayable.outputCount">
       <summary>
-        <para>The count of ouputs on the Playable.  Currently only 1 output is supported.</para>
+        <para>The count of outputs on the Playable.  Currently only 1 output is supported.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Experimental.Director.AnimationMixerPlayable.state">
@@ -13309,7 +13309,7 @@ You can specify either the absolute path or the relative path. When the path you
     </member>
     <member name="P:UnityEngine.Experimental.Director.AnimationPlayable.outputCount">
       <summary>
-        <para>The count of ouputs on the Playable.  Currently only 1 output is supported.</para>
+        <para>The count of outputs on the Playable.  Currently only 1 output is supported.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Experimental.Director.AnimationPlayable.state">
@@ -13817,7 +13817,7 @@ You can specify either the absolute path or the relative path. When the path you
     </member>
     <member name="P:UnityEngine.Experimental.Director.CustomAnimationPlayable.outputCount">
       <summary>
-        <para>The count of ouputs on the Playable.  Currently only 1 output is supported.</para>
+        <para>The count of outputs on the Playable.  Currently only 1 output is supported.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Experimental.Director.CustomAnimationPlayable.state">
@@ -14533,7 +14533,7 @@ A trigger parameter is a bool parameter that gets reset to false when it has bee
     </member>
     <member name="M:UnityEngine.Experimental.Director.Playable.GetOutputs">
       <summary>
-        <para>Get the list of ouputs connected on this Playable.</para>
+        <para>Get the list of outputs connected on this Playable.</para>
       </summary>
       <param name="outputList">List of output Playables.</param>
     </member>
@@ -16387,6 +16387,66 @@ Changing this value affects any subsequently loaded shaders. Initially this valu
       <param name="mat">Custom Material that can be used to draw the texture. If null is passed, a default material with the Internal-GUITexture.shader is used.</param>
       <param name="pass">If -1 (default), draws all passes in the material. Otherwise, draws given pass only.</param>
     </member>
+    <member name="M:UnityEngine.Graphics.DrawTexture(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.Material,System.Int32)">
+      <summary>
+        <para>Draw a texture in screen coordinates.</para>
+      </summary>
+      <param name="screenRect">Rectangle on the screen to use for the texture. In pixel coordinates with (0,0) in the upper-left corner.</param>
+      <param name="texture">Texture to draw.</param>
+      <param name="sourceRect">Region of the texture to use. In normalized coordinates with (0,0) in the bottom-left corner.</param>
+      <param name="leftBorder">Number of pixels from the left that are not affected by scale.</param>
+      <param name="rightBorder">Number of pixels from the right that are not affected by scale.</param>
+      <param name="topBorder">Number of pixels from the top that are not affected by scale.</param>
+      <param name="bottomBorder">Number of pixels from the bottom that are not affected by scale.</param>
+      <param name="color">Color that modulates the output. The neutral value is (0.5, 0.5, 0.5, 0.5). Set as vertex color for the shader.</param>
+      <param name="mat">Custom Material that can be used to draw the texture. If null is passed, a default material with the Internal-GUITexture.shader is used.</param>
+      <param name="pass">If -1 (default), draws all passes in the material. Otherwise, draws given pass only.</param>
+    </member>
+    <member name="M:UnityEngine.Graphics.DrawTexture(UnityEngine.Rect,UnityEngine.Texture,System.Int32,System.Int32,System.Int32,System.Int32,UnityEngine.Material,System.Int32)">
+      <summary>
+        <para>Draw a texture in screen coordinates.</para>
+      </summary>
+      <param name="screenRect">Rectangle on the screen to use for the texture. In pixel coordinates with (0,0) in the upper-left corner.</param>
+      <param name="texture">Texture to draw.</param>
+      <param name="sourceRect">Region of the texture to use. In normalized coordinates with (0,0) in the bottom-left corner.</param>
+      <param name="leftBorder">Number of pixels from the left that are not affected by scale.</param>
+      <param name="rightBorder">Number of pixels from the right that are not affected by scale.</param>
+      <param name="topBorder">Number of pixels from the top that are not affected by scale.</param>
+      <param name="bottomBorder">Number of pixels from the bottom that are not affected by scale.</param>
+      <param name="color">Color that modulates the output. The neutral value is (0.5, 0.5, 0.5, 0.5). Set as vertex color for the shader.</param>
+      <param name="mat">Custom Material that can be used to draw the texture. If null is passed, a default material with the Internal-GUITexture.shader is used.</param>
+      <param name="pass">If -1 (default), draws all passes in the material. Otherwise, draws given pass only.</param>
+    </member>
+    <member name="M:UnityEngine.Graphics.DrawTexture(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.Rect,System.Int32,System.Int32,System.Int32,System.Int32,UnityEngine.Material,System.Int32)">
+      <summary>
+        <para>Draw a texture in screen coordinates.</para>
+      </summary>
+      <param name="screenRect">Rectangle on the screen to use for the texture. In pixel coordinates with (0,0) in the upper-left corner.</param>
+      <param name="texture">Texture to draw.</param>
+      <param name="sourceRect">Region of the texture to use. In normalized coordinates with (0,0) in the bottom-left corner.</param>
+      <param name="leftBorder">Number of pixels from the left that are not affected by scale.</param>
+      <param name="rightBorder">Number of pixels from the right that are not affected by scale.</param>
+      <param name="topBorder">Number of pixels from the top that are not affected by scale.</param>
+      <param name="bottomBorder">Number of pixels from the bottom that are not affected by scale.</param>
+      <param name="color">Color that modulates the output. The neutral value is (0.5, 0.5, 0.5, 0.5). Set as vertex color for the shader.</param>
+      <param name="mat">Custom Material that can be used to draw the texture. If null is passed, a default material with the Internal-GUITexture.shader is used.</param>
+      <param name="pass">If -1 (default), draws all passes in the material. Otherwise, draws given pass only.</param>
+    </member>
+    <member name="M:UnityEngine.Graphics.DrawTexture(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.Rect,System.Int32,System.Int32,System.Int32,System.Int32,UnityEngine.Color,UnityEngine.Material,System.Int32)">
+      <summary>
+        <para>Draw a texture in screen coordinates.</para>
+      </summary>
+      <param name="screenRect">Rectangle on the screen to use for the texture. In pixel coordinates with (0,0) in the upper-left corner.</param>
+      <param name="texture">Texture to draw.</param>
+      <param name="sourceRect">Region of the texture to use. In normalized coordinates with (0,0) in the bottom-left corner.</param>
+      <param name="leftBorder">Number of pixels from the left that are not affected by scale.</param>
+      <param name="rightBorder">Number of pixels from the right that are not affected by scale.</param>
+      <param name="topBorder">Number of pixels from the top that are not affected by scale.</param>
+      <param name="bottomBorder">Number of pixels from the bottom that are not affected by scale.</param>
+      <param name="color">Color that modulates the output. The neutral value is (0.5, 0.5, 0.5, 0.5). Set as vertex color for the shader.</param>
+      <param name="mat">Custom Material that can be used to draw the texture. If null is passed, a default material with the Internal-GUITexture.shader is used.</param>
+      <param name="pass">If -1 (default), draws all passes in the material. Otherwise, draws given pass only.</param>
+    </member>
     <member name="M:UnityEngine.Graphics.DrawTexture(UnityEngine.Rect,UnityEngine.Texture,System.Int32,System.Int32,System.Int32,System.Int32,UnityEngine.Material)">
       <summary>
         <para>Draw a texture in screen coordinates.</para>
@@ -16776,7 +16836,7 @@ Changing this value affects any subsequently loaded shaders. Initially this valu
     </member>
     <member name="M:UnityEngine.GUI.Box(UnityEngine.Rect,System.String)">
       <summary>
-        <para>Create a Box on the GUI Layer. A Box can contain text, an image, or a combination of these along with an optional tooltip, through using a GUIContent parameter. You may also use a GUIStyle to adjust the layout of items in a box, text colour and other properties.</para>
+        <para>Create a Box on the GUI Layer.</para>
       </summary>
       <param name="position">Rectangle on the screen to use for the box.</param>
       <param name="text">Text to display on the box.</param>
@@ -16786,7 +16846,7 @@ Changing this value affects any subsequently loaded shaders. Initially this valu
     </member>
     <member name="M:UnityEngine.GUI.Box(UnityEngine.Rect,UnityEngine.Texture)">
       <summary>
-        <para>Create a Box on the GUI Layer. A Box can contain text, an image, or a combination of these along with an optional tooltip, through using a GUIContent parameter. You may also use a GUIStyle to adjust the layout of items in a box, text colour and other properties.</para>
+        <para>Create a Box on the GUI Layer.</para>
       </summary>
       <param name="position">Rectangle on the screen to use for the box.</param>
       <param name="text">Text to display on the box.</param>
@@ -16796,7 +16856,7 @@ Changing this value affects any subsequently loaded shaders. Initially this valu
     </member>
     <member name="M:UnityEngine.GUI.Box(UnityEngine.Rect,UnityEngine.GUIContent)">
       <summary>
-        <para>Create a Box on the GUI Layer. A Box can contain text, an image, or a combination of these along with an optional tooltip, through using a GUIContent parameter. You may also use a GUIStyle to adjust the layout of items in a box, text colour and other properties.</para>
+        <para>Create a Box on the GUI Layer.</para>
       </summary>
       <param name="position">Rectangle on the screen to use for the box.</param>
       <param name="text">Text to display on the box.</param>
@@ -16806,7 +16866,7 @@ Changing this value affects any subsequently loaded shaders. Initially this valu
     </member>
     <member name="M:UnityEngine.GUI.Box(UnityEngine.Rect,System.String,UnityEngine.GUIStyle)">
       <summary>
-        <para>Create a Box on the GUI Layer. A Box can contain text, an image, or a combination of these along with an optional tooltip, through using a GUIContent parameter. You may also use a GUIStyle to adjust the layout of items in a box, text colour and other properties.</para>
+        <para>Create a Box on the GUI Layer.</para>
       </summary>
       <param name="position">Rectangle on the screen to use for the box.</param>
       <param name="text">Text to display on the box.</param>
@@ -16816,7 +16876,7 @@ Changing this value affects any subsequently loaded shaders. Initially this valu
     </member>
     <member name="M:UnityEngine.GUI.Box(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.GUIStyle)">
       <summary>
-        <para>Create a Box on the GUI Layer. A Box can contain text, an image, or a combination of these along with an optional tooltip, through using a GUIContent parameter. You may also use a GUIStyle to adjust the layout of items in a box, text colour and other properties.</para>
+        <para>Create a Box on the GUI Layer.</para>
       </summary>
       <param name="position">Rectangle on the screen to use for the box.</param>
       <param name="text">Text to display on the box.</param>
@@ -16826,7 +16886,7 @@ Changing this value affects any subsequently loaded shaders. Initially this valu
     </member>
     <member name="M:UnityEngine.GUI.Box(UnityEngine.Rect,UnityEngine.GUIContent,UnityEngine.GUIStyle)">
       <summary>
-        <para>Create a Box on the GUI Layer. A Box can contain text, an image, or a combination of these along with an optional tooltip, through using a GUIContent parameter. You may also use a GUIStyle to adjust the layout of items in a box, text colour and other properties.</para>
+        <para>Create a Box on the GUI Layer.</para>
       </summary>
       <param name="position">Rectangle on the screen to use for the box.</param>
       <param name="text">Text to display on the box.</param>
@@ -16977,7 +17037,7 @@ Changing this value affects any subsequently loaded shaders. Initially this valu
     </member>
     <member name="M:UnityEngine.GUI.DrawTextureWithTexCoords(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.Rect)">
       <summary>
-        <para>Draw a texture within a rectangle with the given texture coordinates. Use this function for clipping or tiling the image within the given rectangle.</para>
+        <para>Draw a texture within a rectangle with the given texture coordinates.</para>
       </summary>
       <param name="position">Rectangle on the screen to draw the texture within.</param>
       <param name="image">Texture to display.</param>
@@ -16986,7 +17046,7 @@ Changing this value affects any subsequently loaded shaders. Initially this valu
     </member>
     <member name="M:UnityEngine.GUI.DrawTextureWithTexCoords(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.Rect,System.Boolean)">
       <summary>
-        <para>Draw a texture within a rectangle with the given texture coordinates. Use this function for clipping or tiling the image within the given rectangle.</para>
+        <para>Draw a texture within a rectangle with the given texture coordinates.</para>
       </summary>
       <param name="position">Rectangle on the screen to draw the texture within.</param>
       <param name="image">Texture to display.</param>
@@ -22777,6 +22837,11 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
         <para>iPod Touch, fifth generation.</para>
       </summary>
     </member>
+    <member name="F:UnityEngine.iOS.DeviceGeneration.iPodTouch6Gen">
+      <summary>
+        <para>iPod Touch, sixth generation.</para>
+      </summary>
+    </member>
     <member name="F:UnityEngine.iOS.DeviceGeneration.iPodTouchUnknown">
       <summary>
         <para>Yet unknown iPod Touch.</para>
@@ -26713,10 +26778,19 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
     </member>
     <member name="M:UnityEngine.Material.SetBuffer(System.String,UnityEngine.ComputeBuffer)">
       <summary>
-        <para>Set a ComputeBuffer value.</para>
+        <para>Set a named ComputeBuffer value.</para>
       </summary>
-      <param name="propertyName"></param>
-      <param name="buffer"></param>
+      <param name="nameID">Property name ID, use Shader.PropertyToID to get it.</param>
+      <param name="name">Property name.</param>
+      <param name="value">ComputeBuffer value to set.</param>
+    </member>
+    <member name="M:UnityEngine.Material.SetBuffer(System.Int32,UnityEngine.ComputeBuffer)">
+      <summary>
+        <para>Set a named ComputeBuffer value.</para>
+      </summary>
+      <param name="nameID">Property name ID, use Shader.PropertyToID to get it.</param>
+      <param name="name">Property name.</param>
+      <param name="value">ComputeBuffer value to set.</param>
     </member>
     <member name="M:UnityEngine.Material.SetColor(System.String,UnityEngine.Color)">
       <summary>
@@ -27375,7 +27449,7 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
     </member>
     <member name="M:UnityEngine.Mathf.Approximately(System.Single,System.Single)">
       <summary>
-        <para>Compares two floating point values if they are similar.</para>
+        <para>Compares two floating point values and returns true if they are similar.</para>
       </summary>
       <param name="a"></param>
       <param name="b"></param>
@@ -28091,6 +28165,12 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
         <para>Creates an empty Mesh.</para>
       </summary>
     </member>
+    <member name="M:UnityEngine.Mesh.GetBindposes(System.Collections.Generic.List`1&lt;UnityEngine.Matrix4x4&gt;)">
+      <summary>
+        <para>Gets the bind poses for this instance.</para>
+      </summary>
+      <param name="bindposes">A list of bind poses to populate.</param>
+    </member>
     <member name="M:UnityEngine.Mesh.GetBlendShapeFrameCount(System.Int32)">
       <summary>
         <para>Returns the frame count for a blend shape.</para>
@@ -28126,11 +28206,49 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
       </summary>
       <param name="shapeIndex"></param>
     </member>
-    <member name="M:UnityEngine.Mesh.GetIndices(System.Int32)">
+    <member name="M:UnityEngine.Mesh.GetBoneWeights(System.Collections.Generic.List`1&lt;UnityEngine.BoneWeight&gt;)">
       <summary>
-        <para>Returns the index buffer for the sub-Mesh.</para>
+        <para>Gets the bone weights for this instance.</para>
+      </summary>
+      <param name="boneWeights">A list of bone weights to populate.</param>
+    </member>
+    <member name="M:UnityEngine.Mesh.GetColors(System.Collections.Generic.List`1&lt;UnityEngine.Color&gt;)">
+      <summary>
+        <para>Gets the vertex colors for this instance.</para>
+      </summary>
+      <param name="colors">A list of vertex colors to populate.</param>
+    </member>
+    <member name="M:UnityEngine.Mesh.GetColors(System.Collections.Generic.List`1&lt;UnityEngine.Color32&gt;)">
+      <summary>
+        <para>Gets the vertex colors for this instance.</para>
+      </summary>
+      <param name="colors">A list of vertex colors to populate.</param>
+    </member>
+    <member name="M:UnityEngine.Mesh.GetIndexCount(System.Int32)">
+      <summary>
+        <para>Gets the index count of the given submesh.</para>
       </summary>
       <param name="submesh"></param>
+    </member>
+    <member name="M:UnityEngine.Mesh.GetIndexStart(System.Int32)">
+      <summary>
+        <para>Gets the starting index location within the Mesh's index buffer, for the given submesh.</para>
+      </summary>
+      <param name="submesh"></param>
+    </member>
+    <member name="M:UnityEngine.Mesh.GetIndices(System.Collections.Generic.List`1&lt;System.Int32&gt;,System.Int32)">
+      <summary>
+        <para>Gets the index buffer for the specified sub mesh on this instance.</para>
+      </summary>
+      <param name="indices">A list of indices to populate.</param>
+      <param name="submesh">The sub mesh on this instance. See subMeshCount.</param>
+    </member>
+    <member name="M:UnityEngine.Mesh.GetIndices(System.Int32)">
+      <summary>
+        <para>Gets the index buffer for the specified sub mesh on this instance.</para>
+      </summary>
+      <param name="indices">A list of indices to populate.</param>
+      <param name="submesh">The sub mesh on this instance. See subMeshCount.</param>
     </member>
     <member name="M:UnityEngine.Mesh.GetNativeIndexBufferPtr">
       <summary>
@@ -28149,17 +28267,37 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
         <para>Pointer to the underlying graphics API vertex buffer.</para>
       </returns>
     </member>
+    <member name="M:UnityEngine.Mesh.GetNormals(System.Collections.Generic.List`1&lt;UnityEngine.Vector3&gt;)">
+      <summary>
+        <para>Gets the vertex normals for this instance.</para>
+      </summary>
+      <param name="normals">A list of vertex normals to populate.</param>
+    </member>
+    <member name="M:UnityEngine.Mesh.GetTangents(System.Collections.Generic.List`1&lt;UnityEngine.Vector4&gt;)">
+      <summary>
+        <para>Gets the tangents for this instance.</para>
+      </summary>
+      <param name="tangents">A list of tangents to populate.</param>
+    </member>
     <member name="M:UnityEngine.Mesh.GetTopology(System.Int32)">
       <summary>
         <para>Gets the topology of a sub-Mesh.</para>
       </summary>
       <param name="submesh"></param>
     </member>
+    <member name="M:UnityEngine.Mesh.GetTriangles(System.Collections.Generic.List`1&lt;System.Int32&gt;,System.Int32)">
+      <summary>
+        <para>Gets the triangle list for the specified sub mesh on this instance.</para>
+      </summary>
+      <param name="triangles">A list of vertex indices to populate.</param>
+      <param name="submesh">The sub mesh on this instance. See subMeshCount.</param>
+    </member>
     <member name="M:UnityEngine.Mesh.GetTriangles(System.Int32)">
       <summary>
-        <para>Returns the triangle list for the sub-Mesh.</para>
+        <para>Gets the triangle list for the specified sub mesh on this instance.</para>
       </summary>
-      <param name="submesh"></param>
+      <param name="triangles">A list of vertex indices to populate.</param>
+      <param name="submesh">The sub mesh on this instance. See subMeshCount.</param>
     </member>
     <member name="M:UnityEngine.Mesh.GetUVs(System.Int32,System.Collections.Generic.List`1&lt;UnityEngine.Vector2&gt;)">
       <summary>
@@ -28181,6 +28319,12 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
       </summary>
       <param name="channel">The UV Channel (zero-indexed).</param>
       <param name="uvs">List of UVs to get for the given index.</param>
+    </member>
+    <member name="M:UnityEngine.Mesh.GetVertices(System.Collections.Generic.List`1&lt;UnityEngine.Vector3&gt;)">
+      <summary>
+        <para>Gets the vertex positions for this instance.</para>
+      </summary>
+      <param name="vertices">A list of vertex positions to populate.</param>
     </member>
     <member name="M:UnityEngine.Mesh.MarkDynamic">
       <summary>
@@ -28213,6 +28357,15 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
         <para>Vertex colors of the Mesh.</para>
       </summary>
       <param name="inColors">Per-Vertex Colours.</param>
+    </member>
+    <member name="M:UnityEngine.Mesh.SetIndices(System.Int32[],UnityEngine.MeshTopology,System.Int32,System.Boolean)">
+      <summary>
+        <para>Sets the index buffer for the sub-Mesh.</para>
+      </summary>
+      <param name="indices"></param>
+      <param name="topology"></param>
+      <param name="submesh"></param>
+      <param name="calculateBounds"></param>
     </member>
     <member name="M:UnityEngine.Mesh.SetIndices(System.Int32[],UnityEngine.MeshTopology,System.Int32)">
       <summary>
@@ -34747,7 +34900,9 @@ The position stream is always enabled, and any attempts to remove it will be ign
     </member>
     <member name="F:UnityEngine.ParticleSystemScalingMode.Shape">
       <summary>
-        <para>Only apply transform scale to the shape component, which cotnrols where particles are spawned, but does not affect their size or movement.</para>
+        <para>Only apply transform scale to the shape component, which controls where
+        particles are spawned, but does not affect their size or movement.
+        </para>
       </summary>
     </member>
     <member name="T:UnityEngine.ParticleSystemShapeType">
@@ -35249,7 +35404,7 @@ To get the current particle age, simply multiply X by Y.</para>
       <param name="center">Center of the box.</param>
       <param name="halfExtents">Half the size of the box in each dimension.</param>
       <param name="direction">The direction in which to cast the box.</param>
-      <param name="hitInfo">If true is returned, hitInfo will contain more information about where the collider was hit (See Also: RaycastHit).</param>
+      <param name="hitInfo">If true is returned, hitInfo will contain more information about where the collider was hit. (See Also: RaycastHit).</param>
       <param name="orientation">Rotation of the box.</param>
       <param name="maxDistance">The max length of the cast.</param>
       <param name="layerMask">A that is used to selectively ignore colliders when casting a capsule.</param>
@@ -35313,7 +35468,7 @@ To get the current particle age, simply multiply X by Y.</para>
       <param name="radius">The radius of the capsule.</param>
       <param name="direction">The direction into which to sweep the capsule.</param>
       <param name="maxDistance">The max length of the sweep.</param>
-      <param name="hitInfo">If true is returned, hitInfo will contain more information about where the collider was hit (See Also: RaycastHit).</param>
+      <param name="hitInfo">If true is returned, hitInfo will contain more information about where the collider was hit. (See Also: RaycastHit).</param>
       <param name="layerMask">A that is used to selectively ignore colliders when casting a capsule.</param>
       <param name="queryTriggerInteraction">Specifies whether this query should hit Triggers.</param>
     </member>
@@ -35432,7 +35587,7 @@ Note that IgnoreLayerCollision will reset the trigger state of affected collider
       <param name="end">End point.</param>
       <param name="layerMask">A that is used to selectively ignore colliders when casting a ray.</param>
       <param name="queryTriggerInteraction">Specifies whether this query should hit Triggers.</param>
-      <param name="hitInfo">If true is returned, hitInfo will contain more information about where the collider was hit (See Also: RaycastHit).</param>
+      <param name="hitInfo">If true is returned, hitInfo will contain more information about where the collider was hit. (See Also: RaycastHit).</param>
     </member>
     <member name="M:UnityEngine.Physics.OverlapBox(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion,System.Int32,UnityEngine.QueryTriggerInteraction)">
       <summary>
@@ -35529,7 +35684,7 @@ Note that IgnoreLayerCollision will reset the trigger state of affected collider
       </summary>
       <param name="origin">The starting point of the ray in world coordinates.</param>
       <param name="direction">The direction of the ray.</param>
-      <param name="hitInfo">If true is returned, hitInfo will contain more information about where the collider was hit (See Also: RaycastHit).</param>
+      <param name="hitInfo">If true is returned, hitInfo will contain more information about where the collider was hit. (See Also: RaycastHit).</param>
       <param name="maxDistance">The max distance the ray should check for collisions.</param>
       <param name="layerMask">A that is used to selectively ignore colliders when casting a ray.</param>
       <param name="queryTriggerInteraction">Specifies whether this query should hit Triggers.</param>
@@ -35554,7 +35709,7 @@ Note that IgnoreLayerCollision will reset the trigger state of affected collider
         <para>Same as above using ray.origin and ray.direction instead of origin and direction.</para>
       </summary>
       <param name="ray">The starting point and direction of the ray.</param>
-      <param name="hitInfo">If true is returned, hitInfo will contain more information about where the collider was hit (See Also: RaycastHit).</param>
+      <param name="hitInfo">If true is returned, hitInfo will contain more information about where the collider was hit. (See Also: RaycastHit).</param>
       <param name="maxDistance">The max distance the ray should check for collisions.</param>
       <param name="layerMask">A that is used to selectively ignore colliders when casting a ray.</param>
       <param name="queryTriggerInteraction">Specifies whether this query should hit Triggers.</param>
@@ -35615,7 +35770,7 @@ Note that IgnoreLayerCollision will reset the trigger state of affected collider
       <param name="origin">The center of the sphere at the start of the sweep.</param>
       <param name="radius">The radius of the sphere.</param>
       <param name="direction">The direction into which to sweep the sphere.</param>
-      <param name="hitInfo">If true is returned, hitInfo will contain more information about where the collider was hit (See Also: RaycastHit).</param>
+      <param name="hitInfo">If true is returned, hitInfo will contain more information about where the collider was hit. (See Also: RaycastHit).</param>
       <param name="maxDistance">The max length of the cast.</param>
       <param name="layerMask">A that is used to selectively ignore colliders when casting a capsule.</param>
       <param name="queryTriggerInteraction">Specifies whether this query should hit Triggers.</param>
@@ -35642,7 +35797,7 @@ Note that IgnoreLayerCollision will reset the trigger state of affected collider
       </summary>
       <param name="ray">The starting point and direction of the ray into which the sphere sweep is cast.</param>
       <param name="radius">The radius of the sphere.</param>
-      <param name="hitInfo">If true is returned, hitInfo will contain more information about where the collider was hit (See Also: RaycastHit).</param>
+      <param name="hitInfo">If true is returned, hitInfo will contain more information about where the collider was hit. (See Also: RaycastHit).</param>
       <param name="maxDistance">The max length of the cast.</param>
       <param name="layerMask">A that is used to selectively ignore colliders when casting a capsule.</param>
       <param name="queryTriggerInteraction">Specifies whether this query should hit Triggers.</param>
@@ -38061,6 +38216,33 @@ frame. Minimum value is 1 and maximum is 33.</para>
       <param name="min">The minimum allowed value.</param>
       <param name="max">The maximum allowed value.</param>
     </member>
+    <member name="T:UnityEngine.RangeInt">
+      <summary>
+        <para>Describes an integer range.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.RangeInt.end">
+      <summary>
+        <para>The end index of the range (not inclusive).</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.RangeInt.length">
+      <summary>
+        <para>The length of the range.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.RangeInt.start">
+      <summary>
+        <para>The starting index of the range, where 0 is the first position, 1 is the second, 2 is the third, and so on.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.RangeInt.#ctor(System.Int32,System.Int32)">
+      <summary>
+        <para>Constructs a new RangeInt with given start, length values.</para>
+      </summary>
+      <param name="start">The starting index of the range.</param>
+      <param name="length">The length of the range.</param>
+    </member>
     <member name="T:UnityEngine.Ray">
       <summary>
         <para>Representation of rays.</para>
@@ -38173,7 +38355,7 @@ frame. Minimum value is 1 and maximum is 33.</para>
     </member>
     <member name="P:UnityEngine.RaycastHit.textureCoord">
       <summary>
-        <para>The uv texture coordinate at the impact point.</para>
+        <para>The uv texture coordinate at the collision location.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.RaycastHit.textureCoord2">
@@ -39544,11 +39726,6 @@ See Also: ReflectionProbeTimeSlicingMode.</para>
         <para>Shader used for screen-space cascaded shadows.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.Rendering.BuiltinShaderType.Sprite">
-      <summary>
-        <para>Default shader used by sprites.</para>
-      </summary>
-    </member>
     <member name="T:UnityEngine.Rendering.CameraEvent">
       <summary>
         <para>Defines a place in camera's rendering to attach Rendering.CommandBuffer objects to.</para>
@@ -40660,7 +40837,7 @@ See Also: ReflectionProbe.RenderProbe.</para>
     </member>
     <member name="F:UnityEngine.Rendering.ReflectionProbeRefreshMode.ViaScripting">
       <summary>
-        <para>Using this option indicates that the probe will never be automatically updated by Unity. This is useful if you wish to completely control the probe refresh behavior via scripting.
+        <para>Using this option indicates that the probe will never be automatically updated by Unity while a game is running. This is useful if you wish to completely control the probe refresh behavior via scripting.
 
 See Also: ReflectionProbe.RenderProbe.</para>
       </summary>
@@ -41831,7 +42008,7 @@ Updating a probe's cubemap is a costly operation. Unity needs to render the enti
     </member>
     <member name="P:UnityEngine.Rigidbody.angularVelocity">
       <summary>
-        <para>The angular velocity vector of the rigidbody.</para>
+        <para>The angular velocity vector of the rigidbody measured in radians per second.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Rigidbody.centerOfMass">
@@ -42714,7 +42891,8 @@ Updating a probe's cubemap is a costly operation. Unity needs to render the enti
     </member>
     <member name="T:UnityEngine.RuntimeInitializeOnLoadMethodAttribute">
       <summary>
-        <para>Allow an runtime class method to be initialized when Unity game loads runtime without action from the user.</para>
+        <para>Allow a runtime class method to be initialized when a game is loaded at runtime
+      without action from the user.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.RuntimeInitializeOnLoadMethodAttribute.loadType">
@@ -42724,15 +42902,17 @@ Updating a probe's cubemap is a costly operation. Unity needs to render the enti
     </member>
     <member name="M:UnityEngine.RuntimeInitializeOnLoadMethodAttribute.#ctor">
       <summary>
-        <para>Allow an runtime class method to be initialized when Unity game loads runtime without action from the user.</para>
+        <para>Creation of the runtime class used when scenes are loaded.</para>
       </summary>
-      <param name="loadType">RuntimeInitializeLoadType: Before or After scene is loaded.</param>
+      <param name="loadType">Determine whether methods are called before or after the
+        scene is loaded.</param>
     </member>
     <member name="M:UnityEngine.RuntimeInitializeOnLoadMethodAttribute.#ctor(UnityEngine.RuntimeInitializeLoadType)">
       <summary>
-        <para>Allow an runtime class method to be initialized when Unity game loads runtime without action from the user.</para>
+        <para>Creation of the runtime class used when scenes are loaded.</para>
       </summary>
-      <param name="loadType">RuntimeInitializeLoadType: Before or After scene is loaded.</param>
+      <param name="loadType">Determine whether methods are called before or after the
+        scene is loaded.</param>
     </member>
     <member name="T:UnityEngine.RuntimePlatform">
       <summary>
@@ -43204,17 +43384,14 @@ A scene may be invalid if, for example, you tried to open a scene that does not 
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.MergeScenes(UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.Scene)">
       <summary>
-        <para>This will merge the source scene into the destinationScene.
-This function merges the contents of the source scene into the destination scene, and deletes the source scene. All GameObjects at the root of the source scene are moved to the root of the destination scene.
-NOTE: This function is destructive: The source scene will be destroyed once the merge has been completed.</para>
+        <para>This will merge the source scene into the destinationScene.</para>
       </summary>
       <param name="sourceScene">The scene that will be merged into the destination scene.</param>
       <param name="destinationScene">Existing scene to merge the source scene into.</param>
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.MoveGameObjectToScene(UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)">
       <summary>
-        <para>Move a GameObject from its current scene to a new Scene.
-You can only move root GameObjects from one Scene to another. This means the GameObject to move must not be a child of any other GameObject in its Scene.</para>
+        <para>Move a GameObject from its current scene to a new Scene.</para>
       </summary>
       <param name="go">GameObject to move.</param>
       <param name="scene">Scene to move into.</param>
@@ -43230,7 +43407,7 @@ You can only move root GameObjects from one Scene to another. This means the Gam
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.UnloadScene(System.Int32)">
       <summary>
-        <para>Destroyes all GameObjects associated with the given scene and removes the scene from the SceneManager.</para>
+        <para>Destroys all GameObjects associated with the given scene and removes the scene from the SceneManager.</para>
       </summary>
       <param name="sceneBuildIndex">Index of the scene in the Build Settings to unload.</param>
       <param name="sceneName">Name or path of the scene to unload.</param>
@@ -43241,7 +43418,7 @@ You can only move root GameObjects from one Scene to another. This means the Gam
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.UnloadScene(System.String)">
       <summary>
-        <para>Destroyes all GameObjects associated with the given scene and removes the scene from the SceneManager.</para>
+        <para>Destroys all GameObjects associated with the given scene and removes the scene from the SceneManager.</para>
       </summary>
       <param name="sceneBuildIndex">Index of the scene in the Build Settings to unload.</param>
       <param name="sceneName">Name or path of the scene to unload.</param>
@@ -43252,7 +43429,7 @@ You can only move root GameObjects from one Scene to another. This means the Gam
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.UnloadScene(UnityEngine.SceneManagement.Scene)">
       <summary>
-        <para>Destroyes all GameObjects associated with the given scene and removes the scene from the SceneManager.</para>
+        <para>Destroys all GameObjects associated with the given scene and removes the scene from the SceneManager.</para>
       </summary>
       <param name="sceneBuildIndex">Index of the scene in the Build Settings to unload.</param>
       <param name="sceneName">Name or path of the scene to unload.</param>
@@ -43263,7 +43440,7 @@ You can only move root GameObjects from one Scene to another. This means the Gam
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(System.Int32)">
       <summary>
-        <para>Destroyes all GameObjects associated with the given scene and removes the scene from the SceneManager.</para>
+        <para>Destroys all GameObjects associated with the given scene and removes the scene from the SceneManager.</para>
       </summary>
       <param name="sceneBuildIndex">Index of the scene in BuildSettings.</param>
       <param name="sceneName">Name or path of the scene to unload.</param>
@@ -43274,7 +43451,7 @@ You can only move root GameObjects from one Scene to another. This means the Gam
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(System.String)">
       <summary>
-        <para>Destroyes all GameObjects associated with the given scene and removes the scene from the SceneManager.</para>
+        <para>Destroys all GameObjects associated with the given scene and removes the scene from the SceneManager.</para>
       </summary>
       <param name="sceneBuildIndex">Index of the scene in BuildSettings.</param>
       <param name="sceneName">Name or path of the scene to unload.</param>
@@ -43285,7 +43462,7 @@ You can only move root GameObjects from one Scene to another. This means the Gam
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(UnityEngine.SceneManagement.Scene)">
       <summary>
-        <para>Destroyes all GameObjects associated with the given scene and removes the scene from the SceneManager.</para>
+        <para>Destroys all GameObjects associated with the given scene and removes the scene from the SceneManager.</para>
       </summary>
       <param name="sceneBuildIndex">Index of the scene in BuildSettings.</param>
       <param name="sceneName">Name or path of the scene to unload.</param>
@@ -48085,6 +48262,11 @@ Returns NULL if there is no associated alpha texture for the source sprite. This
         <para>Returns portion of the screen which is covered by the keyboard.</para>
       </summary>
     </member>
+    <member name="P:UnityEngine.TouchScreenKeyboard.canGetSelection">
+      <summary>
+        <para>Specifies whether the TouchScreenKeyboard supports the selection property. (Read Only)</para>
+      </summary>
+    </member>
     <member name="P:UnityEngine.TouchScreenKeyboard.done">
       <summary>
         <para>Specifies if input process was finished. (Read Only)</para>
@@ -48098,6 +48280,11 @@ Returns NULL if there is no associated alpha texture for the source sprite. This
     <member name="P:UnityEngine.TouchScreenKeyboard.isSupported">
       <summary>
         <para>Is touch screen keyboard supported.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.TouchScreenKeyboard.selection">
+      <summary>
+        <para>Returns the character range of the selected text within the string currently being edited. (Read Only)</para>
       </summary>
     </member>
     <member name="P:UnityEngine.TouchScreenKeyboard.targetDisplay">

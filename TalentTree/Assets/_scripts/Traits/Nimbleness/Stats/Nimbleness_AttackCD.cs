@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class Nimbleness_AttackCD : Trait
 {
-    public float AttackCDMod;
+    public float attackCDMod;
     public override bool Activate()
     {
+        if (attackCDMod <= 0)
+        {
+            Debug.Log("attackCDModis set to zero or lower");
+            return false;
+        }
         //do trait activation
         activated = true;
         //subtract attackcdmod
@@ -17,13 +22,13 @@ public class Nimbleness_AttackCD : Trait
         switch (rank)
         {
             case 1:
-                PlayerPrefs.SetFloat("attackCD", AttackCDMod);
+                PlayerPrefs.SetFloat("attackCD", attackCDMod);
                 break;
             case 2:
-                PlayerPrefs.SetFloat("attackCD", AttackCDMod * .95f);
+                PlayerPrefs.SetFloat("attackCD", attackCDMod * .95f);
                 break;
             case 3:
-                PlayerPrefs.SetFloat("attackCD", AttackCDMod * .90f);
+                PlayerPrefs.SetFloat("attackCD", attackCDMod * .90f);
                 break;
         }
         save();
@@ -34,7 +39,7 @@ public class Nimbleness_AttackCD : Trait
     {
         //do trait deactivation
         activated = false;
-        //add subtractcdmod
+        //reset attackCD to 1
         PlayerPrefs.SetFloat("attackCD", 1f);
         rank = 0;
         save();

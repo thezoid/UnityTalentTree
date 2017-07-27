@@ -7,6 +7,11 @@ public class Nimbleness_MoveSpeed : Trait
     public float MoveSpeedModifier;
     public override bool Activate()
     {
+        if (MoveSpeedModifier<= 0)
+        {
+            Debug.Log("MoveSpeedModifier is set to zero or lower");
+            return false;
+        }
         //do trait activation
         activated = true;
         //this switch will be based off the current rank of the trait

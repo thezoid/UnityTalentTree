@@ -7,12 +7,17 @@ public class Endurance_HPRegen : Trait
     public float healthRegen;
     public override bool Activate()
     {
+        if (healthRegen <= 0)
+        {
+            Debug.Log("healthRegen is set to zero or lower");
+            return false;
+        }
         //do trait activation
         activated = true;
         //this switch will be based off the current rank of the trait
         //it can easily be expanded by increasing the max rank of the trait
         //add another case per additional rank
-        //if it can't find the stat, it will default to 1
+        //healthRegen must be initialized in the code or on the object
         switch (rank)
         {
             case 1:
