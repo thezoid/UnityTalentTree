@@ -30,12 +30,16 @@ public abstract class Trait : MonoBehaviour {
     public bool activated = false;
     public int rank = 0;
     public int maxRanks = 1;
-    public int cost = 0;
-
+    public int cost = 1; //the current cost of the trait
+    public int totalCost; //this will change as we buy the trait more, increasing by a floored scale factor defined below
+    public int baseCost; //this will be set to the initial price so we can reset the price on a reset command
+    public float costScale = 2.0f;
+    
     //[Header("Other")]
 
     private void Awake()
     {
+        baseCost = cost; //store our inital cost to preserve it for a reset
         load(); //load the trait when the scene starts
     }
 
@@ -43,6 +47,8 @@ public abstract class Trait : MonoBehaviour {
     public void addRank()
     {
         rank++;
+        totalCost += cost;
+        cost = (int) Mathf.Floor(cost * costScale);
         save();
     }
 

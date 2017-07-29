@@ -995,7 +995,10 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
-  DamageIncreaseMod: 0
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
+  DamageIncreaseMod: 2
 --- !u!114 &114042698775580946
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1021,7 +1024,10 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
-  healthRegen: 0
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
+  healthRegen: 0.0025
 --- !u!114 &114046373376278510
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1047,6 +1053,9 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
 --- !u!114 &114053891358808890
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1072,6 +1081,9 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
   manaRegenUp: 0.0025
 --- !u!114 &114083139736060072
 MonoBehaviour:
@@ -1098,7 +1110,10 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
-  AggroReducMod: 0
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
+  AggroReducMod: 0.1
 --- !u!114 &114136768796338490
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1124,6 +1139,9 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
 --- !u!114 &114164983677097356
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1149,7 +1167,10 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
-  swipeRangeMod: 0
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
+  swipeRangeMod: 1.25
 --- !u!114 &114168217280087768
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1175,7 +1196,10 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
-  healthLeech: 0
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
+  healthLeech: 0.05
 --- !u!114 &114252368330065750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1201,6 +1225,9 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
 --- !u!114 &114331470492607568
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1226,6 +1253,9 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
   damageReducMod: 0.025
 --- !u!114 &114387957723454850
 MonoBehaviour:
@@ -1252,7 +1282,10 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
-  KnockBackModifier: 0
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
+  KnockBackModifier: 2
 --- !u!114 &114408215914407316
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1278,7 +1311,10 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
-  MoveSpeedModifier: 0
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
+  MoveSpeedModifier: 1
 --- !u!114 &114409861729828864
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1304,6 +1340,9 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
 --- !u!114 &114417217463695858
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1329,6 +1368,9 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
 --- !u!114 &114461301603804916
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1354,7 +1396,10 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
-  critMod: 0
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
+  critMod: 0.05
 --- !u!114 &114514067716008512
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1380,6 +1425,9 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
 --- !u!114 &114517859453663386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1405,7 +1453,10 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
-  EnergyRegenMod: 0
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
+  EnergyRegenMod: 1
 --- !u!114 &114527240116353020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1431,7 +1482,10 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
-  manaLeech: 0
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
+  manaLeech: 0.25
 --- !u!114 &114555286663197756
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1457,6 +1511,9 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
 --- !u!114 &114572200558394322
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1496,7 +1553,10 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
-  AttackCDMod: 0
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
+  attackCDMod: 0.25
 --- !u!114 &114757489379503486
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1522,7 +1582,10 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
-  hpup: 0
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
+  hpup: 50
 --- !u!114 &114770248736122970
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1548,7 +1611,10 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
-  currencyGainRatio: 0
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
+  currencyGainRatio: 1
 --- !u!114 &114795548671391500
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1574,7 +1640,10 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
-  energyLeech: 0
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
+  energyLeech: 0.05
 --- !u!114 &114805336507476650
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1600,6 +1669,9 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
 --- !u!114 &114824317071432776
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1625,6 +1697,9 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
   currencyRetainedRatio: 0
 --- !u!114 &114853685877292956
 MonoBehaviour:
@@ -1651,6 +1726,9 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
 --- !u!114 &114857085701640190
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1676,6 +1754,9 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
 --- !u!114 &114951746419218560
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1701,6 +1782,9 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
 --- !u!114 &114952835591235962
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1726,6 +1810,9 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
 --- !u!114 &114960054773716612
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1751,6 +1838,9 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
+  totalCost: 0
+  baseCost: 0
+  costScale: 2
   manaUp: 50
 --- !u!114 &114980547276152644
 MonoBehaviour:
@@ -1777,3 +1867,6 @@ MonoBehaviour:
   rank: 0
   maxRanks: 3
   cost: 1
+  totalCost: 0
+  baseCost: 0
+  costScale: 2

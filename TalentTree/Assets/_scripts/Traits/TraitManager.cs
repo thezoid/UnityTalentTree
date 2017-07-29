@@ -120,7 +120,8 @@ public class TraitManager : MonoBehaviour
                 if (t.rank>0)
                 {
                     t.Deactivate();
-                    tokens.spendTokens(-t.cost);
+                    tokens.spendTokens(-t.totalCost); //refund the currency spent on the trait
+                    t.cost = t.baseCost; //reset our trait to its base cost
                     //uncomment the line below to get more details on what traits are deactivating; WARNING: this will spam the console
                     //Debug.Log(t.name + " deactivated successfully!");
                 }
