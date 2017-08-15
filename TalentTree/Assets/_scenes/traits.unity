@@ -232,6 +232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 1156778321}
+  requiredTrait: {fileID: 0}
   button: {fileID: 39844592}
   tooltipShow: 0
   tooltipName: 
@@ -423,6 +424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 833724922}
+  requiredTrait: {fileID: 0}
   button: {fileID: 46813020}
   tooltipShow: 0
   tooltipName: 
@@ -843,6 +845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 38662449}
+  requiredTrait: {fileID: 0}
   button: {fileID: 124025583}
   tooltipShow: 0
   tooltipName: 
@@ -1046,6 +1049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 2051724014}
+  requiredTrait: {fileID: 0}
   button: {fileID: 233008002}
   tooltipShow: 0
   tooltipName: 
@@ -1380,6 +1384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 1313919499}
+  requiredTrait: {fileID: 0}
   button: {fileID: 256822387}
   tooltipShow: 0
   tooltipName: 
@@ -1577,6 +1582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 1170690604}
+  requiredTrait: {fileID: 0}
   button: {fileID: 325849161}
   tooltipShow: 0
   tooltipName: 
@@ -1842,6 +1848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 1650010974}
+  requiredTrait: {fileID: 0}
   button: {fileID: 443887122}
   tooltipShow: 0
   tooltipName: 
@@ -2294,6 +2301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 248715739}
+  requiredTrait: {fileID: 0}
   button: {fileID: 582033895}
   tooltipShow: 0
   tooltipName: 
@@ -2628,6 +2636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 1203265204}
+  requiredTrait: {fileID: 0}
   button: {fileID: 679820513}
   tooltipShow: 0
   tooltipName: 
@@ -2906,6 +2915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 1799957639}
+  requiredTrait: {fileID: 0}
   button: {fileID: 723071680}
   tooltipShow: 0
   tooltipName: 
@@ -3097,6 +3107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 2101542695}
+  requiredTrait: {fileID: 0}
   button: {fileID: 760466199}
   tooltipShow: 0
   tooltipName: 
@@ -3374,6 +3385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 961252961}
+  requiredTrait: {fileID: 0}
   button: {fileID: 833182603}
   tooltipShow: 0
   tooltipName: 
@@ -3571,6 +3583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 1127859054}
+  requiredTrait: {fileID: 0}
   button: {fileID: 841708998}
   tooltipShow: 0
   tooltipName: 
@@ -3910,6 +3923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 830050285}
+  requiredTrait: {fileID: 0}
   button: {fileID: 878939320}
   tooltipShow: 0
   tooltipName: 
@@ -4101,6 +4115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 782393451}
+  requiredTrait: {fileID: 0}
   button: {fileID: 942806529}
   tooltipShow: 0
   tooltipName: 
@@ -4292,6 +4307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 1240855240}
+  requiredTrait: {fileID: 0}
   button: {fileID: 948895627}
   tooltipShow: 0
   tooltipName: 
@@ -4637,6 +4653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 1545136095}
+  requiredTrait: {fileID: 0}
   button: {fileID: 997489078}
   tooltipShow: 0
   tooltipName: 
@@ -4828,6 +4845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 1719416914}
+  requiredTrait: {fileID: 0}
   button: {fileID: 1024088085}
   tooltipShow: 0
   tooltipName: 
@@ -5093,6 +5111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 1702368819}
+  requiredTrait: {fileID: 0}
   button: {fileID: 1078375235}
   tooltipShow: 0
   tooltipName: 
@@ -5358,6 +5377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 324790473}
+  requiredTrait: {fileID: 0}
   button: {fileID: 1104242189}
   tooltipShow: 0
   tooltipName: 
@@ -5561,6 +5581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 1208518340}
+  requiredTrait: {fileID: 0}
   button: {fileID: 1160267041}
   tooltipShow: 0
   tooltipName: 
@@ -5758,6 +5779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 126182535}
+  requiredTrait: {fileID: 0}
   button: {fileID: 1181165958}
   tooltipShow: 0
   tooltipName: 
@@ -6104,6 +6126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 152837627}
+  requiredTrait: {fileID: 0}
   button: {fileID: 1300224495}
   tooltipShow: 0
   tooltipName: 
@@ -6295,6 +6318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 1922065810}
+  requiredTrait: {fileID: 0}
   button: {fileID: 1301365389}
   tooltipShow: 0
   tooltipName: 
@@ -6640,6 +6664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 1973048419}
+  requiredTrait: {fileID: 0}
   button: {fileID: 1374012949}
   tooltipShow: 0
   tooltipName: 
@@ -7093,6 +7118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 88691057}
+  requiredTrait: {fileID: 0}
   button: {fileID: 1553154204}
   tooltipShow: 0
   tooltipName: 
@@ -7290,6 +7316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 519334757}
+  requiredTrait: {fileID: 0}
   button: {fileID: 1626829491}
   tooltipShow: 0
   tooltipName: 
@@ -7493,6 +7520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 1664399333}
+  requiredTrait: {fileID: 0}
   button: {fileID: 1688087609}
   tooltipShow: 0
   tooltipName: 
@@ -7696,6 +7724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 91551632}
+  requiredTrait: {fileID: 0}
   button: {fileID: 1782484114}
   tooltipShow: 0
   tooltipName: 
@@ -8084,6 +8113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 1476143298}
+  requiredTrait: {fileID: 0}
   button: {fileID: 1835731133}
   tooltipShow: 0
   tooltipName: 
@@ -8355,6 +8385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trait: {fileID: 1588081350}
+  requiredTrait: {fileID: 0}
   button: {fileID: 1946127396}
   tooltipShow: 0
   tooltipName: 

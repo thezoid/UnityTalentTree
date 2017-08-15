@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class TraitButton : MonoBehaviour {
 
     public Trait trait; //a reference to the trait under the trait manager the button represents
+    private bool traitRequired = true; //if a trait is required before unlocking htis one or not
+    public Trait requiredTrait; //the trait that is required to unlock this one
     public Button button; //a reference to the button
     public bool tooltipShow; //a flag for whether or not to show the tooltip
     public string tooltipName; //the name of the trait to be displayed on the
@@ -23,40 +25,94 @@ public class TraitButton : MonoBehaviour {
         GUI.skin = tooltipSkin;
         if (tooltipShow)
         {
-            //if the trait is at max ranks, then we just need to draw the background, name, and description
-            //if you want to show the cost, reference the second label of the else case (for example, it will show something like "Cost: 3/3")
-            if (trait.rank == trait.maxRanks)
+            if (traitRequired)
             {
-                //tooltip background
-                GUI.Box(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, 175, Mathf.Max((float)Screen.height * 0.20f, ((float)tooltipDesc.Length) + 75f, 125f)),tooltipBackground);
-                //tooltip name
-                GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, Mathf.Clamp(tooltipName.Length * 10,75,175), 40), tooltipName);
-                //tooltip cost
-                GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y + 40, 170, 240), tooltipDesc);
+                //if the trait is at max ranks, then we just need to draw the background, name, and description
+                //if you want to show the cost, reference the second label of the else case (for example, it will show something like "Cost: 3/3")
+                if (trait.rank == trait.maxRanks)
+                {
+                    //tooltip background
+                    GUI.Box(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, 175, Mathf.Max((float)Screen.height * 0.20f, ((float)tooltipDesc.Length) + 75f, 125f)), tooltipBackground);
+                    //tooltip name
+                    GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, Mathf.Clamp(tooltipName.Length * 10, 75, 175), 40), tooltipName);
+                    //tooltip cost
+                    GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y + 40, 170, 240), tooltipDesc);
+                }
+                //if the required trait for the button isnt at max ranks, then it hasnt been completed
+                //this means that the tooltip should reflect what is required to unlock this button
+                else if (requiredTrait.rank < requiredTrait.maxRanks)
+                {
+                    //tooltip description
+                    GUI.Box(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, 175, Mathf.Max((float)Screen.height * 0.20f, ((float)tooltipDesc.Length) + 90f, 125f)), tooltipBackground);
+                    //tooltip name
+                    GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, Mathf.Clamp(tooltipName.Length * 10, 75, 175), 40), tooltipName);
+                    //tooltip cost
+                    GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y + 40, 170, 20), tooltipCost);
+                    //tooltip description
+                    GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y + 60, 170, 240), tooltipDesc);
+                }
+                //if the button isnt interactable but it isnt at max ranks, then it must be a disabled trait,
+                //therefore we only need the background, name, and description drawn
+                else if (!this.button.interactable)
+                {
+                    //tooltip background
+                    GUI.Box(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, 175, Mathf.Max((float)Screen.height * 0.20f, ((float)tooltipDesc.Length) + 75f, 125f)), tooltipBackground);
+                    //tooltip name
+                    GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, Mathf.Clamp(tooltipName.Length * 10, 75, 175), 40), tooltipName);
+                    //tooltiip description
+                    GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y + 40, 170, 240), tooltipDesc);
+                }
+                //the trait is a standard trait that can rank up, 
+                //therefore it needs the background, name, cost, and description drawn
+                else
+                {
+                    //tooltip description
+                    GUI.Box(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, 175, Mathf.Max((float)Screen.height * 0.20f, ((float)tooltipDesc.Length) + 75f, 125f)), tooltipBackground);
+                    //tooltip name
+                    GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, Mathf.Clamp(tooltipName.Length * 10, 75, 175), 40), tooltipName);
+                    //tooltip cost
+                    GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y + 40, 170, 20), tooltipCost);
+                    //tooltip description
+                    GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y + 60, 170, 240),tooltipDesc);
+                }
             }
-            //if the button isnt interactable but it isnt at max ranks, then it must be a disabled trait,
-            //therefore we only need the background, name, and description drawn
-            else if (!this.button.interactable)
-            {
-                //tooltip background
-                GUI.Box(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, 175, Mathf.Max((float)Screen.height * 0.20f, ((float)tooltipDesc.Length) + 75f, 125f)), tooltipBackground);
-                //tooltip name
-                GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, Mathf.Clamp(tooltipName.Length * 10, 75, 175), 40), tooltipName);
-                //tooltiip description
-                GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y + 40, 170, 240), tooltipDesc);
-            }
-            //the trait is a standard trait that can rank up, 
-            //therefore it needs the background, name, cost, and description drawn
             else
             {
-                //tooltip description
-                GUI.Box(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, 175, Mathf.Max((float)Screen.height * 0.20f,((float)tooltipDesc.Length) + 75f, 125f)), tooltipBackground);
-                //tooltip name
-                GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, Mathf.Clamp(tooltipName.Length * 10, 75, 175), 40), tooltipName);
-                //tooltip cost
-                GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y + 40, 170, 20), tooltipCost);
-                //tooltip description
-                GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y + 60, 170, 240), tooltipDesc);
+                //if the trait is at max ranks, then we just need to draw the background, name, and description
+                //if you want to show the cost, reference the second label of the else case (for example, it will show something like "Cost: 3/3")
+                if (trait.rank == trait.maxRanks)
+                {
+                    //tooltip background
+                    GUI.Box(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, 175, Mathf.Max((float)Screen.height * 0.20f, ((float)tooltipDesc.Length) + 75f, 125f)), tooltipBackground);
+                    //tooltip name
+                    GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, Mathf.Clamp(tooltipName.Length * 10, 75, 175), 40), tooltipName);
+                    //tooltip cost
+                    GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y + 40, 170, 240), tooltipDesc);
+                }
+                //if the button isnt interactable but it isnt at max ranks, then it must be a disabled trait,
+                //therefore we only need the background, name, and description drawn
+                else if (!this.button.interactable && !traitRequired)
+                {
+                    //tooltip background
+                    GUI.Box(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, 175, Mathf.Max((float)Screen.height * 0.20f, ((float)tooltipDesc.Length) + 75f, 125f)), tooltipBackground);
+                    //tooltip name
+                    GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, Mathf.Clamp(tooltipName.Length * 10, 75, 175), 40), tooltipName);
+                    //tooltiip description
+                    GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y + 40, 170, 240), tooltipDesc);
+                }
+                //the trait is a standard trait that can rank up, 
+                //therefore it needs the background, name, cost, and description drawn
+                else
+                {
+                    //tooltip description
+                    GUI.Box(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, 175, Mathf.Max((float)Screen.height * 0.20f, ((float)tooltipDesc.Length) + 75f, 125f)), tooltipBackground);
+                    //tooltip name
+                    GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, Mathf.Clamp(tooltipName.Length * 10, 75, 175), 40), tooltipName);
+                    //tooltip cost
+                    GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y + 40, 170, 20), tooltipCost);
+                    //tooltip description
+                    GUI.Label(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y + 60, 170, 240), tooltipDesc);
+                }
             }
         }
     }
@@ -78,6 +134,14 @@ public class TraitButton : MonoBehaviour {
     private void Awake()
     {
         updateTooltip();
+        if (requiredTrait != null)
+        {
+            traitRequired = true;
+        }
+        else
+        {
+            traitRequired = false;
+        }
     }
 
     private void Update()
@@ -97,7 +161,17 @@ public class TraitButton : MonoBehaviour {
         if (!(trait.rank < trait.maxRanks)) //if a trait is at max ranks, make it not interactable
         {
             this.button.interactable = false;
-        }else if(trait.rank < 0){ //if a trait is at a rank lower than zero, report it to the console as disabled, then disable the button
+        }
+        else if (traitRequired) { 
+            if(requiredTrait.rank < requiredTrait.maxRanks){//if the trait required to unlock this one isnt at max ranks, then disable the button
+                this.button.interactable = false;
+            }
+            else
+            {
+                this.button.interactable = true;
+            }
+        }
+        else if(trait.rank < 0){ //if a trait is at a rank lower than zero, report it to the console as disabled, then disable the button
             if (!reported)
             {
                 Debug.Log(trait.traitName+" disabled (rank < 0)");
@@ -131,6 +205,12 @@ public class TraitButton : MonoBehaviour {
                 tooltipName = trait.traitName + ": " + trait.rank + "/" + trait.maxRanks;
                 tooltipDesc = trait.traitDescription;
             }
+            //if the required trait is not at max ranks, prepared a tooltip to show that
+            else if(requiredTrait.rank < requiredTrait.maxRanks)
+            {
+                tooltipName = trait.traitName;
+                tooltipDesc = "Required trait: "+requiredTrait.traitName + "\n\n" + trait.traitDescription;
+            }
             else
             {
                 //if its not interactable and its not at max ranks, then it must be disabled
@@ -150,26 +230,61 @@ public class TraitButton : MonoBehaviour {
         //add a rank to the trait
         //update the tooltip
         //inform the user via the purchase text
-        if (trait.rank < trait.maxRanks && Tokens.tokens >= trait.cost)
+        if (traitRequired)
         {
-            tokens.spendTokens(trait.cost);
-            trait.addRank();
-            updateTooltip();
-            purchase.color = new Color(1f, 1f, 1f, 1f);
-            purchase.text = "-- PURCHASE COMPLETE --\nYou purchased: "+trait.traitName;
-            Invoke("purchaseTextFade", 5f);
+            if (trait.rank < trait.maxRanks && Tokens.tokens >= trait.cost && requiredTrait.rank == requiredTrait.maxRanks)
+            {
+                tokens.spendTokens(trait.cost);
+                trait.addRank();
+                updateTooltip();
+                purchase.CrossFadeAlpha(1f, 0f, true);
+                purchase.color = new Color(1f, 1f, 1f, 1f);
+                purchase.text = "-- PURCHASE COMPLETE --\nYou purchased: " + trait.traitName + " " + trait.rank + "/" + trait.maxRanks;
+                Invoke("purchaseTextFade", 5f);
+            }
+            //in all other cases, inform the player that the purchase didnt go through
+            else
+            {
+                purchase.CrossFadeAlpha(1f, 0f, true);
+                purchase.color = new Color(1f, 0f, 0f, 1f);
+                purchase.text = "-- INVALID PURCHASE --\nYOU CAN'T AFFORD THAT";
+                Invoke("purchaseTextFade", 5f);
+            }
         }
-        //in all other cases, inform the player that the purchase didnt go through
         else
         {
-            purchase.color = new Color(1f, 0f, 0f, 1f);
-            purchase.text = "-- INVALID PURCHASE --\nYOU CAN'T AFFORD THAT";
-            Invoke("purchaseTextFade", 5f);
+            if (trait.rank < trait.maxRanks && Tokens.tokens >= trait.cost)
+            {
+                tokens.spendTokens(trait.cost);
+                trait.addRank();
+                updateTooltip();
+                purchase.CrossFadeAlpha(1f, 0f, true);
+                purchase.color = new Color(1f, 1f, 1f, 1f);
+                purchase.text = "-- PURCHASE COMPLETE --\nYou purchased: " + trait.traitName + " " + trait.rank+"/"+trait.maxRanks;
+                Invoke("purchaseTextFade", 5f);
+            }
+            //in all other cases, inform the player that the purchase didnt go through
+            else
+            {
+                purchase.CrossFadeAlpha(1f, 0f, true);
+                purchase.color = new Color(1f, 0f, 0f, 1f);
+                purchase.text = "-- INVALID PURCHASE --\nYOU CAN'T AFFORD THAT";
+                Invoke("purchaseTextFade", 5f);
+            }
         }
     }
 
     public void purchaseTextFade()
     {
         purchase.CrossFadeAlpha(0.0f, 1f, true);
+        //Invoke("resetPurchaseText", 5f);
     }
+    /*
+    public void resetPurchaseText()
+    {
+        purchase.text = "";
+        purchase.color = new Color(1, 1, 1);
+        purchase.CrossFadeAlpha(1f, 0f, true);
+    }
+    */
 }
