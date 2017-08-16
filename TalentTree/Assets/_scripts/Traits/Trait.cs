@@ -34,7 +34,8 @@ public abstract class Trait : MonoBehaviour {
     public int totalCost; //this will change as we buy the trait more, increasing by a floored scale factor defined below
     public int baseCost; //this will be set to the initial price so we can reset the price on a reset command
     public float costScale = 2.0f;
-    
+    public Trait requiredTrait; //the trait that is required to unlock this one
+
     //[Header("Other")]
 
     private void Awake()

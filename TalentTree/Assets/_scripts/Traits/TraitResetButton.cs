@@ -22,6 +22,7 @@ public class TraitResetButton : MonoBehaviour {
     public void deactivateTraits()
     {
         //change the text to inform the user that the traits have been reset
+        purchase.CrossFadeAlpha(1f, 1f, true);
         purchase.color = new Color(1f, 1f, 1f, 1f); 
         purchase.text = "--Traits reset--";
         Invoke("purchaseTextFade", 5f); //make the text fade after 5 seconds

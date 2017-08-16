@@ -7,7 +7,6 @@ public class TraitButton : MonoBehaviour {
 
     public Trait trait; //a reference to the trait under the trait manager the button represents
     private bool traitRequired = true; //if a trait is required before unlocking htis one or not
-    public Trait requiredTrait; //the trait that is required to unlock this one
     public Button button; //a reference to the button
     public bool tooltipShow; //a flag for whether or not to show the tooltip
     public string tooltipName; //the name of the trait to be displayed on the
@@ -40,7 +39,7 @@ public class TraitButton : MonoBehaviour {
                 }
                 //if the required trait for the button isnt at max ranks, then it hasnt been completed
                 //this means that the tooltip should reflect what is required to unlock this button
-                else if (requiredTrait.rank < requiredTrait.maxRanks)
+                else if (trait.requiredTrait.rank < trait.requiredTrait.maxRanks)
                 {
                     //tooltip description
                     GUI.Box(new Rect(Input.mousePosition.x + 20, Screen.height - Input.mousePosition.y, 175, Mathf.Max((float)Screen.height * 0.20f, ((float)tooltipDesc.Length) + 90f, 125f)), tooltipBackground);
@@ -134,7 +133,7 @@ public class TraitButton : MonoBehaviour {
     private void Awake()
     {
         updateTooltip();
-        if (requiredTrait != null)
+        if (trait.requiredTrait != null)
         {
             traitRequired = true;
         }
@@ -163,7 +162,7 @@ public class TraitButton : MonoBehaviour {
             this.button.interactable = false;
         }
         else if (traitRequired) { 
-            if(requiredTrait.rank < requiredTrait.maxRanks){//if the trait required to unlock this one isnt at max ranks, then disable the button
+            if(trait.requiredTrait.rank < trait.requiredTrait.maxRanks){//if the trait required to unlock this one isnt at max ranks, then disable the button
                 this.button.interactable = false;
             }
             else
@@ -206,10 +205,10 @@ public class TraitButton : MonoBehaviour {
                 tooltipDesc = trait.traitDescription;
             }
             //if the required trait is not at max ranks, prepared a tooltip to show that
-            else if(requiredTrait.rank < requiredTrait.maxRanks)
+            else if(trait.requiredTrait.rank < trait.requiredTrait.maxRanks)
             {
                 tooltipName = trait.traitName;
-                tooltipDesc = "Required trait: "+requiredTrait.traitName + "\n\n" + trait.traitDescription;
+                tooltipDesc = "Required trait: "+ trait.requiredTrait.traitName + "\n\n" + trait.traitDescription;
             }
             else
             {
@@ -232,7 +231,7 @@ public class TraitButton : MonoBehaviour {
         //inform the user via the purchase text
         if (traitRequired)
         {
-            if (trait.rank < trait.maxRanks && Tokens.tokens >= trait.cost && requiredTrait.rank == requiredTrait.maxRanks)
+            if (trait.rank < trait.maxRanks && Tokens.tokens >= trait.cost && trait.requiredTrait.rank == trait.requiredTrait.maxRanks)
             {
                 tokens.spendTokens(trait.cost);
                 trait.addRank();
