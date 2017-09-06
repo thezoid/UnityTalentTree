@@ -1,7 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
+using UnityEngine;
+[System.Serializable]
 public class Endurance_DamageReduction : Trait
 {
     public float damageReducMod;
@@ -33,7 +36,7 @@ public class Endurance_DamageReduction : Trait
             default:
                 break;
         }
-        save();
+        //save();
         return true;
     }
 
@@ -61,7 +64,7 @@ public class Endurance_DamageReduction : Trait
                 break;
         }
         rank = 0;
-        save();
+        //save();
         return true;
     }
 }

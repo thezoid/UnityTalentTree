@@ -1,7 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
+using UnityEngine;
+[System.Serializable]
 public class Intelligence_TimeControl : Trait
 {
 
@@ -39,7 +42,7 @@ public class Intelligence_TimeControl : Trait
             default:
                 break;
         }
-        save();
+        //save();
         return true;
     }
 
@@ -70,7 +73,7 @@ public class Intelligence_TimeControl : Trait
                 break;
         }
         rank = 0;
-        save();
+        //save();
         return true;
     }
 }

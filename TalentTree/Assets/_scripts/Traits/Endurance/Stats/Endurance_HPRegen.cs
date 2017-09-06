@@ -1,7 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
+using UnityEngine;
+[System.Serializable]
 public class Endurance_HPRegen : Trait
 {
     public float healthRegen;
@@ -33,7 +36,7 @@ public class Endurance_HPRegen : Trait
                 PlayerPrefs.SetFloat("healthRegen", 0f);
                 break;
         }
-        save();
+        //save();
         return true;
     }
 
@@ -43,7 +46,7 @@ public class Endurance_HPRegen : Trait
         activated = false;
         PlayerPrefs.SetFloat("healthRegen", 0f);
         rank = 0;
-        save();
+        //save();
         return true;
     }
 }

@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4959554980854072}
   - component: {fileID: 114517859453663386}
   m_Layer: 0
-  m_Name: Tact_EnergyRegen
+  m_Name: Agility_EnergyRegen
   m_TagString: trait
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53,7 +53,7 @@ GameObject:
   - component: {fileID: 4307264212476870}
   - component: {fileID: 114461301603804916}
   m_Layer: 0
-  m_Name: Karma_Crit
+  m_Name: Luck_Crit
   m_TagString: trait
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 4587496792724510}
   - component: {fileID: 114555286663197756}
   m_Layer: 0
-  m_Name: Toughness
+  m_Name: Strength
   m_TagString: trait
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,7 +85,7 @@ GameObject:
   - component: {fileID: 4018574215602796}
   - component: {fileID: 114032463107628558}
   m_Layer: 0
-  m_Name: Toughness_DamageUp
+  m_Name: Strength_DamageUp
   m_TagString: trait
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 4795557378005476}
   - component: {fileID: 114046373376278510}
   m_Layer: 0
-  m_Name: Karma
+  m_Name: Luck
   m_TagString: trait
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -132,7 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4229146562182278}
   m_Layer: 0
-  m_Name: Tact
+  m_Name: Agility
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 4530635313699556}
   - component: {fileID: 114857085701640190}
   m_Layer: 0
-  m_Name: Nimbleness
+  m_Name: Dexterity
   m_TagString: trait
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 4626508076162524}
   - component: {fileID: 114409861729828864}
   m_Layer: 0
-  m_Name: Tact_Pounce
+  m_Name: Agility_Pounce
   m_TagString: trait
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 4354392045690688}
   - component: {fileID: 114980547276152644}
   m_Layer: 0
-  m_Name: Toughness_Enrage
+  m_Name: Strength_Enrage
   m_TagString: trait
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -243,7 +243,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4587358213326582}
   m_Layer: 0
-  m_Name: Nimbleness
+  m_Name: Dexterity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 4216099663589774}
   - component: {fileID: 114527240116353020}
   m_Layer: 0
-  m_Name: Karma_LeechMP
+  m_Name: Luck_LeechMP
   m_TagString: trait
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -274,7 +274,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4352136348501600}
   m_Layer: 0
-  m_Name: Karma
+  m_Name: Luck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -290,7 +290,7 @@ GameObject:
   - component: {fileID: 4778836513235296}
   - component: {fileID: 114387957723454850}
   m_Layer: 0
-  m_Name: Toughness_KnockBack
+  m_Name: Strength_KnockBack
   m_TagString: trait
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 4248576521634100}
   - component: {fileID: 114408215914407316}
   m_Layer: 0
-  m_Name: Nimbleness_MoveSpeed
+  m_Name: Dexterity_MoveSpeed
   m_TagString: trait
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -401,7 +401,7 @@ GameObject:
   - component: {fileID: 4638797972079056}
   - component: {fileID: 114770248736122970}
   m_Layer: 0
-  m_Name: Karma_CurrencyGain
+  m_Name: Luck_CurrencyGain
   m_TagString: trait
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -433,7 +433,7 @@ GameObject:
   - component: {fileID: 4978197263847300}
   - component: {fileID: 114805336507476650}
   m_Layer: 0
-  m_Name: Tact
+  m_Name: Agility
   m_TagString: trait
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -448,7 +448,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4752262000943408}
   m_Layer: 0
-  m_Name: Toughness
+  m_Name: Strength
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -480,7 +480,7 @@ GameObject:
   - component: {fileID: 4599872202300690}
   - component: {fileID: 114168217280087768}
   m_Layer: 0
-  m_Name: Karma_LeechHP
+  m_Name: Luck_LeechHP
   m_TagString: trait
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -496,7 +496,7 @@ GameObject:
   - component: {fileID: 4583218724762570}
   - component: {fileID: 114164983677097356}
   m_Layer: 0
-  m_Name: Toughness_SwipeRange
+  m_Name: Strength_SwipeRange
   m_TagString: trait
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -528,7 +528,7 @@ GameObject:
   - component: {fileID: 4373505127089618}
   - component: {fileID: 114083139736060072}
   m_Layer: 0
-  m_Name: Nimbleness_AggroReduction
+  m_Name: Dexterity_AggroReduction
   m_TagString: trait
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -544,7 +544,7 @@ GameObject:
   - component: {fileID: 4109456719145900}
   - component: {fileID: 114824317071432776}
   m_Layer: 0
-  m_Name: Karma_CurrencyRetained
+  m_Name: Luck_CurrencyRetained
   m_TagString: trait
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -560,7 +560,7 @@ GameObject:
   - component: {fileID: 4908441490431356}
   - component: {fileID: 114795548671391500}
   m_Layer: 0
-  m_Name: Karma_LeechEnergy
+  m_Name: Luck_LeechEnergy
   m_TagString: trait
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -576,7 +576,7 @@ GameObject:
   - component: {fileID: 4621776222940464}
   - component: {fileID: 114632152724731734}
   m_Layer: 0
-  m_Name: Nimbleness_AttackCD
+  m_Name: Dexterity_AttackCD
   m_TagString: trait
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -607,7 +607,7 @@ GameObject:
   - component: {fileID: 4130047263565950}
   - component: {fileID: 114252368330065750}
   m_Layer: 0
-  m_Name: Nimbleness_Stealth
+  m_Name: Dexterity_Stealth
   m_TagString: trait
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -705,7 +705,7 @@ Transform:
   - {fileID: 4626508076162524}
   - {fileID: 4959554980854072}
   m_Father: {fileID: 4639810392388944}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4248576521634100
 Transform:
@@ -764,7 +764,7 @@ Transform:
   - {fileID: 4599872202300690}
   - {fileID: 4216099663589774}
   m_Father: {fileID: 4639810392388944}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4354392045690688
 Transform:
@@ -822,7 +822,7 @@ Transform:
   - {fileID: 4787638486085310}
   - {fileID: 4453736566339006}
   m_Father: {fileID: 4639810392388944}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4453736566339006
 Transform:
@@ -892,7 +892,7 @@ Transform:
   - {fileID: 4621776222940464}
   - {fileID: 4248576521634100}
   m_Father: {fileID: 4639810392388944}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4587496792724510
 Transform:
@@ -949,7 +949,7 @@ Transform:
   - {fileID: 4630800954053108}
   - {fileID: 4344090214392202}
   m_Father: {fileID: 4639810392388944}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4621776222940464
 Transform:
@@ -1013,11 +1013,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 4229146562182278}
+  - {fileID: 4587358213326582}
   - {fileID: 4621191785350258}
   - {fileID: 4422028337323870}
   - {fileID: 4352136348501600}
-  - {fileID: 4587358213326582}
-  - {fileID: 4229146562182278}
   - {fileID: 4752262000943408}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1155,12 +1155,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 910836357b45eb84bb8f75a943d6678e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Damage Increase
@@ -1185,12 +1186,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0914d65f02e1dc43acfc88163890a19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Health Regeneration
@@ -1215,16 +1217,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f39e69306413fa147b4cd386261e48be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 5
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
-  traitName: Increase Karma
-  traitDescription: Increase your karma
+  traitName: Luck
+  traitDescription: Increase your luck
   activated: 0
   rank: 0
   maxRanks: 3
@@ -1244,12 +1247,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76e28fcd92320c84daa21a71ae4f4e8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Mana Regeneration
@@ -1274,12 +1278,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23bf9fc9d2e155d4ba63a81b61641cb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Aggro Reduction
@@ -1304,12 +1309,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 345a2f4a61d92d346825c72a8b1ea935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 5
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Endurance
@@ -1333,12 +1339,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8019ae258706d04b8882d224eeecb13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Swipe Range
@@ -1363,12 +1370,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4ec6be18771b234ca8f9d356cb55107, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Leech Health
@@ -1393,12 +1401,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30b4e1f175486954287895f300748b58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Stealth
@@ -1422,12 +1431,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce7b49a44703c394b87e629010628221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: DamageReduction
@@ -1452,12 +1462,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cde83cc90a34e254badff59d77d4464a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Knockback
@@ -1482,12 +1493,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8098786dbe2fb742aff4ae55f10eaf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Move Speed
@@ -1512,12 +1524,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe9ee3b074e2cf48a83575abb14ab43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Pounce
@@ -1541,12 +1554,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4a8660d44e96f945a2b02be5dbb990a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Time Control
@@ -1570,12 +1584,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baf8e98fc3b800a4686eb936e0823ea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Critical Chance
@@ -1600,12 +1615,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4a5ab5cfaf5a54cb9184d2597ce430, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Thorns
@@ -1629,12 +1645,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4dbab0d782a994f9f87dd00d2e1d81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Energy Regen
@@ -1659,12 +1676,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d468703a1fb5d994299794088673d1f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Leech Mana
@@ -1689,16 +1707,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c8dd8312c4c26439508ae5d3db3532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 5
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
-  traitName: Toughness
-  traitDescription: Increase toughness
+  traitName: Strength
+  traitDescription: Increase strength
   activated: 0
   rank: 0
   maxRanks: 3
@@ -1719,7 +1738,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   traits: []
-  traitsGO: []
+  traitsGOs: []
   tokens: {fileID: 0}
 --- !u!114 &114632152724731734
 MonoBehaviour:
@@ -1732,12 +1751,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 053a74d91a3f1094ba43c18fa2fbcbb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Attack Cooldown Reduction
@@ -1762,12 +1782,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef11644313fc5d468cd4d7683ba987e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Increase Health
@@ -1792,12 +1813,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfc243e76ff640743badd709840fec45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Currency Gain
@@ -1822,12 +1844,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732f42696f7fe954d9d02c70b8ee29ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Energy Leech
@@ -1852,16 +1875,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7992497775fd3774290ba1fb1ae2446e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 5
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
-  traitName: Increase Tact
-  traitDescription: Increase tact
+  traitName: Agility
+  traitDescription: Increase agility
   activated: 0
   rank: 0
   maxRanks: 3
@@ -1881,12 +1905,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54ada3df2078e0b4b9701125758a2d60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Currency Retention
@@ -1911,12 +1936,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ab5b2b0be451014cb1acbd0348e3c7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Shield
@@ -1940,16 +1966,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5864d9e6bb6267149a94827ce965c5a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 5
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
-  traitName: Nimbleness
-  traitDescription: Increase Nimbleness
+  traitName: Dexterity
+  traitDescription: Increase Dexterity
   activated: 0
   rank: 0
   maxRanks: 3
@@ -1969,12 +1996,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e4eef8d0beafa24592f59e50ebb94ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Fireball
@@ -1998,12 +2026,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa3bf5ab1d81f246a07567c5210e2b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 5
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Intelligence
@@ -2027,12 +2056,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a41314460c10b234dbe64055e16ff5f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Increase Mana
@@ -2057,12 +2087,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d23dae64b93cc2f43bb703081a7c8ef2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaBonus: 0
+  luckBonus: 0
   intelligenceBonus: 0
-  toughnessBonus: 0
-  tactBonus: 0
+  strengthBonus: 0
+  agilityBonus: 0
   enduranceBonus: 0
-  nimblenessBonus: 0
+  dexterityBonus: 0
+  characterStats: {fileID: 0}
   HealthBonus: 0
   MPBonus: 0
   traitName: Enrage

@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1116453196171964}
+  m_IsPrefabParent: 1
+--- !u!1 &1116453196171964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4588184555785152}
+  - component: {fileID: 114766332462110638}
+  m_Layer: 0
+  m_Name: Character
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4588184555785152
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1116453196171964}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 41.739613, y: 28.715954, z: -182.4856}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114766332462110638
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1116453196171964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 198f6d0bbe3825a4bb92dfef163c0489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  luck: 0
+  intelligence: 0
+  strength: 0
+  agility: 0
+  endurance: 0
+  dexterity: 0
+  baseDamage: 5
+  timer: 0
+  maxHealth: 0
+  Health: 0
+  healthPerSecond: 0
+  damageReduction: 0
+  energy: 0
+  maxEnergy: 100
+  energyPerSecond: 0.25
+  mana: 0
+  maxMana: 100
+  manaPerSecond: 0.15
+  currentMagic: 0
+  fireballUnlocked: 0
+  fireballCost: 0
+  fireballBaseCost: 0
+  fireballDamage: 0
+  fireballBaseDamage: 0
+  fireballDuration: 0
+  fireBallObject: {fileID: 0}
+  shieldUnlocked: 0
+  shieldBaseCost: 0
+  shieldCost: 0
+  shieldDuration: 0
+  shieldBaseDuration: 0
+  shieldActive: 0
+  shieldCurrentDuration: 0
+  timeControlUnlocked: 0
+  timeControlBaseCost: 0
+  timeControlCost: 0
+  timeControlDuration: 0
+  timeControlBaseDuration: 0
+  timeControlCurrentDuration: 0
+  thornsUnlocked: 0
+  thornsCost: 0
+  thornsBaseCost: 0
+  thornsDuration: 0
+  thornsBaseDuration: 0
+  thornsDamage: 0
+  thornsBaseDamage: 0
+  thornsActive: 0
+  thornsCurrentDuration: 0
+  stealthUnlocked: 0
+  stealthCost: 0
+  stealthBaseCost: 0
+  stealthDuration: 0
+  stealthCurrentDuration: 0
+  pounceUnlocked: 0
+  pounceCost: 0
+  pounceBaseCost: 0
+  pounceForce: 0
+  pounceDamageMulti: 0
+  enrageUnlocked: 0
+  enrageDuration: 0
+  enrageDamageMulti: 0
+  enrageCost: 0
+  enrageBaseCost: 0
+  enrageCurrentDuration: 0
+  unlockedMagics: 00000000000000
+  tokens: 0
+  StatWeight: 0.25
+  critChance: 0
+  currencyGained: 0
+  currencyRetained: 0
+  healthLeech: 0
+  energyLeech: 0
+  manaLeech: 0
+  aggroReduction: 0
+  damageMod: 0
+  knockBack: 0
+  swipeRange: 0
+  prompt1: 0
+  prompt2: 0

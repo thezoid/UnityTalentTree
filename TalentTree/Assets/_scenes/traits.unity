@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 7
+  serializedVersion: 8
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -25,6 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -41,7 +42,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 7
+  serializedVersion: 9
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -53,7 +54,7 @@ LightmapSettings:
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
-    serializedVersion: 4
+    serializedVersion: 8
     m_Resolution: 2
     m_BakeResolution: 40
     m_TextureWidth: 1024
@@ -66,13 +67,27 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_DirectLightInLightProbes: 1
     m_FinalGather: 0
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
+    m_MixedBakeMode: 1
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVRFiltering: 0
+    m_PVRFilteringMode: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousColorSigma: 1
+    m_PVRFilteringAtrousNormalSigma: 1
+    m_PVRFilteringAtrousPositionSigma: 1
   m_LightingDataAsset: {fileID: 0}
-  m_RuntimeCPUUsage: 25
+  m_ShadowMaskMode: 2
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -89,6 +104,8 @@ NavMeshSettings:
     minRegionArea: 2
     manualCellSize: 0
     cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &38662449 stripped
@@ -111,7 +128,7 @@ GameObject:
   - component: {fileID: 39844595}
   - component: {fileID: 39844596}
   m_Layer: 5
-  m_Name: btnTact
+  m_Name: btnAgility
   m_TagString: traitButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -239,7 +256,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &39844596
 MonoBehaviour:
@@ -430,7 +446,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &46813024
 MonoBehaviour:
@@ -490,7 +505,7 @@ GameObject:
   - component: {fileID: 84842591}
   - component: {fileID: 84842590}
   m_Layer: 5
-  m_Name: TactPanel
+  m_Name: AgilityPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -747,6 +762,31 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114572200558394322, guid: 850a485407733ae4aa1b387cd6c075c2,
+        type: 2}
+      propertyPath: tokens
+      value: 
+      objectReference: {fileID: 1238032777}
+    - target: {fileID: 114805336507476650, guid: 850a485407733ae4aa1b387cd6c075c2,
+        type: 2}
+      propertyPath: agilityBonus
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114857085701640190, guid: 850a485407733ae4aa1b387cd6c075c2,
+        type: 2}
+      propertyPath: dexterityBonus
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114046373376278510, guid: 850a485407733ae4aa1b387cd6c075c2,
+        type: 2}
+      propertyPath: luckBonus
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114555286663197756, guid: 850a485407733ae4aa1b387cd6c075c2,
+        type: 2}
+      propertyPath: strengthBonus
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 850a485407733ae4aa1b387cd6c075c2, type: 2}
   m_IsPrefabParent: 0
@@ -892,7 +932,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &124025587
 MonoBehaviour:
@@ -1095,7 +1134,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &233008006
 MonoBehaviour:
@@ -1429,7 +1467,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &256822391
 MonoBehaviour:
@@ -1626,7 +1663,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &325849165
 MonoBehaviour:
@@ -1686,7 +1722,7 @@ GameObject:
   - component: {fileID: 418509206}
   - component: {fileID: 418509205}
   m_Layer: 5
-  m_Name: ToughnessPanel
+  m_Name: StrengthPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1891,7 +1927,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &443887126
 MonoBehaviour:
@@ -2101,6 +2136,7 @@ GameObject:
   - component: {fileID: 541442286}
   - component: {fileID: 541442285}
   - component: {fileID: 541442284}
+  - component: {fileID: 541442287}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -2165,7 +2201,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 541442285}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 541442287}
+        m_MethodName: gtl
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &541442285
@@ -2201,6 +2248,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 541442282}
+--- !u!114 &541442287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 541442282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 690d52b00ad5c70458af66f4cd933abc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &582033893
 GameObject:
   m_ObjectHideFlags: 0
@@ -2343,7 +2401,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &582033899
 MonoBehaviour:
@@ -2677,7 +2734,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &679820517
 MonoBehaviour:
@@ -2796,6 +2852,8 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 0
+  m_AllowMSAA: 1
+  m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
@@ -2827,7 +2885,7 @@ GameObject:
   - component: {fileID: 723071683}
   - component: {fileID: 723071684}
   m_Layer: 5
-  m_Name: btnToughness
+  m_Name: btnStrength
   m_TagString: traitButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2922,7 +2980,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0fdd472237424404cbc5e8d35d11b79b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 11cb349bf99666449b9c7a57e29b5ddb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2955,7 +3013,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &723071684
 MonoBehaviour:
@@ -3146,7 +3203,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &760466203
 MonoBehaviour:
@@ -3295,7 +3351,7 @@ GameObject:
   - component: {fileID: 833182606}
   - component: {fileID: 833182607}
   m_Layer: 5
-  m_Name: btnKarma
+  m_Name: btnLuck
   m_TagString: traitButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3423,7 +3479,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &833182607
 MonoBehaviour:
@@ -3620,7 +3675,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &841709002
 MonoBehaviour:
@@ -3680,7 +3734,7 @@ GameObject:
   - component: {fileID: 847414021}
   - component: {fileID: 847414020}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3736,7 +3790,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Tact
+  m_Text: 'Agility
+
+'
 --- !u!222 &847414021
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3754,7 +3810,7 @@ GameObject:
   - component: {fileID: 871145888}
   - component: {fileID: 871145887}
   m_Layer: 5
-  m_Name: NimblenessPanel
+  m_Name: DexterityPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3959,7 +4015,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &878939324
 MonoBehaviour:
@@ -4150,7 +4205,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &942806533
 MonoBehaviour:
@@ -4341,7 +4395,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &948895631
 MonoBehaviour:
@@ -4407,7 +4460,7 @@ GameObject:
   - component: {fileID: 963947487}
   - component: {fileID: 963947486}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4686,7 +4739,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &997489082
 MonoBehaviour:
@@ -4877,7 +4929,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1024088089
 MonoBehaviour:
@@ -4937,7 +4988,7 @@ GameObject:
   - component: {fileID: 1061834905}
   - component: {fileID: 1061834904}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4993,7 +5044,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Nimbleness
+  m_Text: Dexterity
 --- !u!222 &1061834905
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5142,7 +5193,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1078375239
 MonoBehaviour:
@@ -5202,7 +5252,7 @@ GameObject:
   - component: {fileID: 1088769339}
   - component: {fileID: 1088769338}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5258,7 +5308,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Karma
+  m_Text: 'Luck
+
+'
 --- !u!222 &1088769339
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5407,7 +5459,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1104242193
 MonoBehaviour:
@@ -5610,7 +5661,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1160267045
 MonoBehaviour:
@@ -5807,7 +5857,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1181165962
 MonoBehaviour:
@@ -5879,7 +5928,7 @@ Light:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1200724742}
   m_Enabled: 1
-  serializedVersion: 7
+  serializedVersion: 8
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
@@ -5904,6 +5953,8 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!4 &1200724744
@@ -6005,6 +6056,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 022febf738c18b24587283c265010786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tokens: 0
+  tokenText: {fileID: 0}
 --- !u!114 &1240855240 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114952835591235962, guid: 850a485407733ae4aa1b387cd6c075c2,
@@ -6153,7 +6206,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1300224499
 MonoBehaviour:
@@ -6344,7 +6396,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1301365393
 MonoBehaviour:
@@ -6404,7 +6455,7 @@ GameObject:
   - component: {fileID: 1313296786}
   - component: {fileID: 1313296785}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6460,7 +6511,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Toughness
+  m_Text: Strength
 --- !u!222 &1313296786
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6689,7 +6740,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1374012953
 MonoBehaviour:
@@ -6880,7 +6930,7 @@ Canvas:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1496911660}
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
@@ -6889,6 +6939,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -6931,7 +6982,7 @@ GameObject:
   - component: {fileID: 1502258776}
   - component: {fileID: 1502258775}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7142,7 +7193,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1553154208
 MonoBehaviour:
@@ -7191,6 +7241,52 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!1001 &1562392180
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4588184555785152, guid: f1193e83dcdeef44685f68581d8c7ee2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 41.739613
+      objectReference: {fileID: 0}
+    - target: {fileID: 4588184555785152, guid: f1193e83dcdeef44685f68581d8c7ee2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 28.715954
+      objectReference: {fileID: 0}
+    - target: {fileID: 4588184555785152, guid: f1193e83dcdeef44685f68581d8c7ee2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -182.4856
+      objectReference: {fileID: 0}
+    - target: {fileID: 4588184555785152, guid: f1193e83dcdeef44685f68581d8c7ee2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4588184555785152, guid: f1193e83dcdeef44685f68581d8c7ee2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4588184555785152, guid: f1193e83dcdeef44685f68581d8c7ee2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4588184555785152, guid: f1193e83dcdeef44685f68581d8c7ee2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4588184555785152, guid: f1193e83dcdeef44685f68581d8c7ee2, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116453196171964, guid: f1193e83dcdeef44685f68581d8c7ee2, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f1193e83dcdeef44685f68581d8c7ee2, type: 2}
+  m_IsPrefabParent: 0
 --- !u!114 &1588081350 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114083139736060072, guid: 850a485407733ae4aa1b387cd6c075c2,
@@ -7339,7 +7435,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1626829495
 MonoBehaviour:
@@ -7542,7 +7637,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1688087613
 MonoBehaviour:
@@ -7617,7 +7711,7 @@ GameObject:
   - component: {fileID: 1782484117}
   - component: {fileID: 1782484118}
   m_Layer: 5
-  m_Name: btnNimbleness
+  m_Name: btnDexterity
   m_TagString: traitButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7745,7 +7839,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1782484118
 MonoBehaviour:
@@ -7945,8 +8038,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 255857170}
-        m_MethodName: deactivateTraits
+      - m_Target: {fileID: 0}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8133,7 +8226,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1835731137
 MonoBehaviour:
@@ -8404,7 +8496,6 @@ MonoBehaviour:
   tooltipCost: 
   tooltipBackground: {fileID: 0}
   tooltipSkin: {fileID: 11400000, guid: cc1ffb4322b2ef1469d732d0ff91c069, type: 2}
-  tokens: {fileID: 1238032777}
   purchase: {fileID: 811115121}
 --- !u!114 &1946127400
 MonoBehaviour:
@@ -8464,7 +8555,7 @@ GameObject:
   - component: {fileID: 1958857398}
   - component: {fileID: 1958857397}
   m_Layer: 5
-  m_Name: KarmaPanel
+  m_Name: LuckPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

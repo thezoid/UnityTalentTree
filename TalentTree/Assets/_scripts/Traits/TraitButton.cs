@@ -15,7 +15,6 @@ public class TraitButton : MonoBehaviour {
     public Texture tooltipBackground; //the texture of the background of the tooltip
     public GUISkin tooltipSkin; //the guiskin to determine the display of the tooltip
     bool reported = false; //a boolean used for debugging
-    public Tokens tokens; //a reference to the object managing the tokens
     public Text purchase; //the text that displays feedback for an action with a button
 
     //all the tooltip drawing is handled in OnGUI
@@ -148,11 +147,11 @@ public class TraitButton : MonoBehaviour {
         //DEV CHEAT TO ADD TOKENS, REMOVE THIS LATER
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            Tokens.tokens = 1000000;
+            Tokens.manager.tokens = 1000000;
         }
         if (Input.GetKeyDown(KeyCode.X))
         {
-            Tokens.tokens = 0;
+            Tokens.manager.tokens = 0;
         }
         //DEV CHEAT TO ADD TOKENS, REMOVE THIS LATER
 
@@ -231,9 +230,9 @@ public class TraitButton : MonoBehaviour {
         //inform the user via the purchase text
         if (traitRequired)
         {
-            if (trait.rank < trait.maxRanks && Tokens.tokens >= trait.cost && trait.requiredTrait.rank == trait.requiredTrait.maxRanks)
+            if (trait.rank < trait.maxRanks && Tokens.manager.tokens >= trait.cost && trait.requiredTrait.rank == trait.requiredTrait.maxRanks)
             {
-                tokens.spendTokens(trait.cost);
+                Tokens.manager.spendTokens(trait.cost);
                 trait.addRank();
                 updateTooltip();
                 purchase.CrossFadeAlpha(1f, 0f, true);
@@ -252,9 +251,9 @@ public class TraitButton : MonoBehaviour {
         }
         else
         {
-            if (trait.rank < trait.maxRanks && Tokens.tokens >= trait.cost)
+            if (trait.rank < trait.maxRanks && Tokens.manager.tokens >= trait.cost)
             {
-                tokens.spendTokens(trait.cost);
+                Tokens.manager.spendTokens(trait.cost);
                 trait.addRank();
                 updateTooltip();
                 purchase.CrossFadeAlpha(1f, 0f, true);
